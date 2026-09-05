@@ -22,11 +22,15 @@ Woodcutter north of Arenfield. Daughter to [Katherin](10-katherin.md).
     NTR: if you leave Tia in Rumah and then don't come back for a week she will start getting angry at you. She will first start wearing tribal wear and then after a while start a relationship with Dasan. You can prevent this by completing the reputation quest and then to mend your relationship sleep in your hut with Tia.
     
     1. Talk to Raaisha again (make sure you have enough health) and win against her in a 1on1.
+    
     2. Talk to Raaisha after you won against her, she will send you to rescue 2 of her hunters.  
-        1. Is to the East near the orc camp.  
-        2. Is to the south both in the deep forest.
+        1\. Is to the East near the orc camp.  
+        2\. Is to the south both in the deep forest.
+    
     3. Talk to the blond haired guy near the palisade, he wants meat from rabbits and deers. You can either hunt them or buy them at the inn from Thomas.
+    
     4. Talk to the guy below the chieftains hut, he's the lumberjack of the village and asks you for 20 wood logs. With Tia in the group you can cut down some of the trees in the forest. Every 3 days also new trees will spawn.
+    
     5. Talk to Hiba (woman in the middle of the village near the water bowl) and give her a bottle of wine (buy from Thomas at the inn).
 
 9. Talk to the chieftain again and choose reputation. (Tia has to be in group and her A for you at 15+, if below sleep with her in your hut for a few days).

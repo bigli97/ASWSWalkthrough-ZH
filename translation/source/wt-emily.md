@@ -15,14 +15,22 @@ Mother to [Mira](06-mira.md) and [Frisha](15-frisha.md).
         1. ![emily1.jpg](assets/images/emily1.jpg)
             
             Walk into the Dark Wood and follow the foot-prints into the deep forest. Inspect the prints near the river, afterwards inspect the tree.
+        
         2. Back to Arenfield and talk to Tia.
+        
         3. On the other side go inside the shed and interrogate the bandit.
+        
         4. Now you have to search the forest for 3 runes, the locations are random so look around the other maps (entrance, hunting ground, bridge, hidden path, deep forest).
+        
         5. Under the bed in the shed you can find a chest with gold There is a shortcut to the Old oak on this map.![emily2.jpg](assets/images/emily2.jpg)
         6. After your Keystone is charged go back into the deep forest and inspect the foot-prints at the NW edge of the map.
+        
         7. At the bandit camp you can now try to sneak towards the cave to rescue Emily, if the guards detect you the camp will be alarmed which will make it much harder to reach the cave (wait until the next day to set it back to normal). During the night (20h-6h) it is much easier because the guards aren't patrolling as much as during the day.
+        
         8. At the cave you have to kill the bandit (hard without a better armor or weapon, see John and Lucius) and get the keys from his body. Afterwards escape the camp without being detected.
+        
         9. Should you lose the battle you will lose your keystone, in the forest near the entrance of the camp will spawn a new bandit where you can get a new stone.
+    
     2. **Pay ransom:**  
         To get more gold you can talk to Mira every day she will give you 20 silver. Place the gold under the old oak before the time is up.
 

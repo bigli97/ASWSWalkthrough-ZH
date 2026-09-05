@@ -11,6 +11,7 @@ import sys
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
+import markdown
 from bs4 import BeautifulSoup, NavigableString, Tag
 from markdownify import MarkdownConverter
 
@@ -18,12 +19,13 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / 'ASWSWalkthrough'
 TRANS = ROOT / 'translation'
 BUILD = ROOT / '.build' / 'docs'
-SAMPLES = ['wt-info', 'wt-tips', 'wt-intro']
+ACTIVE_TARGETS = {'wt-tia', 'wt-arianna', 'wt-emily', 'wt-lyvia', 'wt-ayita'}
 TITLES = {'wt-info': '基本信息', 'wt-tips': '技巧与窍门', 'wt-intro': '序章',
           'wt-house': '房屋翻修', 'wt-mc': '主角', 'wt-mira': '米拉',
           'wt-carmen': '卡门', 'wt-lucius': '卢修斯', 'wt-verena': '维蕾娜',
           'wt-rose': '罗斯', 'wt-corven': '科文', 'wt-john': '约翰',
-          'wt-melissa': '梅丽莎', 'wt-imawyn': '伊玛温', 'wt-maui': '毛伊',
+          'wt-tia': '蒂娅', 'wt-arianna': '阿丽安娜', 'wt-emily': '艾米莉',
+          'wt-lyvia': '莉维娅', 'wt-melissa': '梅丽莎', 'wt-imawyn': '伊玛温', 'wt-maui': '毛伊',
           'wt-church': '教堂', 'wt-monastery': '修道院', 'wt-katherin': '凯瑟琳',
           'wt-kate': '凯特', 'wt-claire': '克莱尔', 'wt-frisha': '弗莉莎',
           'wt-bianca': '比安卡', 'wt-gavina': '加维娜', 'wt-ugotha': '乌戈莎',
@@ -32,7 +34,7 @@ TITLES = {'wt-info': '基本信息', 'wt-tips': '技巧与窍门', 'wt-intro': '
           'wt-elisabeth': '伊丽莎白', 'wt-gwen': '格温', 'wt-sabrina': '萨布丽娜',
           'wt-athia': '阿西娅', 'wt-bridget': '布丽姬特', 'wt-agatha': '阿加莎',
           'wt-heather': '希瑟', 'wt-rumah': '鲁玛村', 'wt-raaisha': '拉伊莎',
-          'wt-hiba': '希芭', 'wt-nyra': '妮拉', 'wt-umah': '乌玛',
+          'wt-hiba': '希芭', 'wt-nyra': '妮拉', 'wt-ayita': 'Ayita', 'wt-umah': '乌玛',
           'wt-darkholt': '重建暗林', 'wt-mansion': '市长宅邸', 'wt-julia': '朱莉娅',
           'wt-liandra': '莉安德拉', 'wt-helena': '海伦娜', 'wt-yasmine': '雅斯敏'}
 PLACES = {'wt-house', 'wt-church', 'wt-monastery', 'wt-rumah', 'wt-darkholt', 'wt-mansion'}
@@ -72,8 +74,28 @@ class GuideMarkdown(MarkdownConverter):
         return prefix + text.replace('\n', '\n    ') + '\n'
 
 
-def md(fragment):
-    return GuideMarkdown(heading_style='ATX', bullets='-', escape_underscores=False).convert(str(fragment)).strip()
+class SafeListMarkdown(GuideMarkdown):
+    def convert_li(self, el, text, parent_tags):
+        return super().convert_li(el, text, parent_tags).rstrip() + '\n\n'
+
+
+def md(fragment, safe_lists=False):
+    fragment = BeautifulSoup(str(fragment), 'html.parser')
+    if safe_lists:
+        # HTML 普通文字中的“1. ...”不是 li；转义句点，避免 Markdown 把它伪识别为列表项。
+        for node in list(fragment.descendants):
+            if not isinstance(node, NavigableString):
+                continue
+            escaped = re.sub(r'^(\s*\d+)\.(\s+)', r'\1\\.\2', str(node))
+            if escaped != str(node):
+                node.replace_with(escaped)
+    converter = SafeListMarkdown if safe_lists else GuideMarkdown
+    return converter(heading_style='ATX', bullets='-', escape_underscores=False).convert(str(fragment)).strip()
+
+
+def rendered_list_items(text):
+    rendered = markdown.markdown(text, extensions=['extra'])
+    return len(BeautifulSoup(rendered, 'html.parser').select('li'))
 
 
 def extract():
@@ -125,9 +147,16 @@ def extract():
             for offset, item in enumerate(nodes):
                 consumed.extend([str(t) for t in item.descendants if isinstance(t, NavigableString)] if isinstance(item, Tag) else [str(item)])
                 if isinstance(node, Tag) and node.name in ('ol', 'ul'):
-                    body = md(''.join(str(x) for x in item.contents))
                     prefix = str(int(node.get('start', 1)) + offset) + '. ' if node.name == 'ol' else '- '
+                    body_html = ''.join(str(x) for x in item.contents)
+                    body = md(body_html)
                     rendered = prefix + body.replace('\n', '\n    ')
+                    expected_items = 1 + len(item.select('li'))
+                    if rendered_list_items(rendered) != expected_items:
+                        body = md(body_html, safe_lists=True)
+                        rendered = prefix + body.replace('\n', '\n    ')
+                    if rendered_list_items(rendered) != expected_items:
+                        raise ValueError('列表结构提取失败：%s/%s' % (c['id'], len(blocks) + 1))
                 else:
                     rendered = md(item)
                 if not rendered:
@@ -140,13 +169,16 @@ def extract():
         all_text = [str(t) for t in soup.descendants if isinstance(t, NavigableString) and t.strip()]
         if Counter(t for t in consumed if t.strip()) != Counter(all_text):
             raise ValueError('提取文字覆盖检查失败：' + c['id'])
+        chapter_markdown = '# ' + c['title'] + '\n\n' + '\n\n'.join(b['markdown'] for b in blocks) + '\n'
+        if rendered_list_items(chapter_markdown) != c['list_items']:
+            raise ValueError('整章列表结构提取失败：' + c['id'])
         data = {'chapter': c['id'], 'title': c['title'], 'blocks': blocks}
         destination = TRANS / 'source' / (c['id'] + '.json')
         # 轻量保护：已存在草稿时拒绝悄悄变更对应原文，后续可另行做版本更新。
         if destination.exists() and read_json(destination) != data and (TRANS / 'drafts' / c['id']).exists():
             raise ValueError('已有草稿的原文发生变化，请单独处理更新：' + c['id'])
         dump(destination, data)
-        write(TRANS / 'source' / (c['id'] + '.md'), '# ' + c['title'] + '\n\n' + '\n\n'.join(b['markdown'] for b in blocks) + '\n')
+        write(TRANS / 'source' / (c['id'] + '.md'), chapter_markdown)
         # 批次按结构单元组合；单个长列表项保持完整，不切断条件句。
         batches, current, size = [], [], 0
         for b in blocks:
@@ -159,7 +191,8 @@ def extract():
             batches.append(current)
         c['batches'] = batches
         c['blocks'] = len(blocks)
-    dump(TRANS / 'chapters.json', {'version': version, 'chapters': chapters, 'samples': SAMPLES})
+    translated = [c['id'] for c in chapters if (ROOT / 'docs' / c['file']).exists() or c['id'] in ACTIVE_TARGETS]
+    dump(TRANS / 'chapters.json', {'version': version, 'chapters': chapters, 'samples': translated})
     (ROOT / 'page').mkdir(exist_ok=True)
     shutil.copy2(SOURCE / 'index.html', ROOT / 'page' / 'index.html')
     shutil.copytree(SOURCE / 'pages', ROOT / 'page' / 'pages', dirs_exist_ok=True)
@@ -397,6 +430,9 @@ def check():
         text = (ROOT / 'docs' / c['file']).read_text()
         if re.findall(r'<!-- source:(\d+) -->', text) != [b['id'] for b in blocks]:
             raise ValueError('中文章节块标记缺失或顺序变化：' + c['file'])
+        published = re.sub(r'<!-- source:\d+ -->\n', '', text)
+        if rendered_list_items(published) != c['list_items']:
+            raise ValueError('中文章节渲染后的列表结构不一致：' + c['file'])
         report['samples'].append({'chapter': c['id'], 'blocks': len(blocks), 'images': len(c['images']), 'list_items': c['list_items']})
     site = ROOT / 'dist' / 'site'
     site_url = re.search(r'^site_url:\s*(\S+)', (ROOT / 'mkdocs.yml').read_text(), re.M)

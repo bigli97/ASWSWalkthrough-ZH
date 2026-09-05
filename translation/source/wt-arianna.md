@@ -36,12 +36,17 @@ Lives with her mother [Verena](17-verena.md), father Roderic, and older brother 
 15. Inside the hideout try to not get caught by the guards (hide between barrels).
     
     1. If you got into a fight and lost: You're now in a cell. But there is a hole in the ground at the top of the cell that you can use to flee.
+    
     2. In the tunnels you can find a pickaxe.
+    
     3. With the pickaxe you can break the walls at the marked positions.
         
         ![arianna2.jpg](assets/images/arianna2.jpg)
+    
     4. Careful, in the tunnels are spiders, if you lose to them it's game over. If you're low on hp, rest in the cell.
+    
     5. In the room below the prison you can find a chest with all the item's they stole from you.
+    
     6. In the tunnels to the south you can also find a new bow.
 
 16. Make your way to the down right corner where the cells are. And listen to the conversation.

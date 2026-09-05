@@ -2,7 +2,7 @@
 
 Captain of the militia.
 
-1. 1. After [Imawyn](23-imawyn.md) got captured talk to her in the afternoon near the training field.
+1. 1\. After [Imawyn](23-imawyn.md) got captured talk to her in the afternoon near the training field.
 
 2. Visit the barracks (Right door at the Mayor's mansion) and sit with Lyvia during the evening, repeat the next day.
 

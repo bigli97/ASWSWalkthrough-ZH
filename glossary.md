@@ -50,6 +50,60 @@
 | Rick | 瑞克 | 人名 |
 | Thomas | 托马斯 | 人名 |
 | Gwen | 格温 | 人名 |
+| Abraham | 亚伯拉罕 | 人名 |
+| Adson | 阿德森 | 人名 |
+| Alaira | 阿莱拉 | 人名 |
+| Antonius | 安东尼乌斯 | 人名 |
+| Bernard | 伯纳德 | 人名 |
+| Dultharon | 杜尔萨隆 | 人名 |
+| Eric | 埃里克 | 人名 |
+| Fanghul | 芳古尔 | 人名 |
+| Fanghun | 芳洪 | 人名 |
+| Fiona | 菲奥娜 | 人名 |
+| Francis | 弗朗西斯 | 人名 |
+| Gabriel | 加布里埃尔 | 人名 |
+| Giron | 吉隆 | 人名 |
+| Gritz | 格里茨 | 人名 |
+| Gromthul | 格罗姆苏尔 | 人名 |
+| Harvald | 哈瓦尔德 | 人名 |
+| Hekima | 赫基玛 | 人名 |
+| Henry | 亨利 | 人名 |
+| Isha | 伊莎 | 人名 |
+| Jorge | 豪尔赫 | 人名 |
+| Joseph | 约瑟夫 | 人名 |
+| Lodric | 洛德里克 | 人名 |
+| Loren | 洛伦 | 人名 |
+| Matthias | 马蒂亚斯 | 人名 |
+| Oliver | 奥利弗 | 人名 |
+| Palak | 帕拉克 | 人名 |
+| Parakis | 帕拉基斯 | 人名 |
+| Saiel | 赛尔 | 人名 |
+| Scorial | 斯科里尔 | 人名 |
+| Sophie | 苏菲 | 人名 |
+| Toren | 托伦 | 人名 |
+| Uldar | 乌尔达 | 人名 |
+| Van | 范 | 人名 |
+| Velthaze | 维尔萨泽 | 人名 |
+| Vilina | 维莉娜 | 人名 |
+| William | 威廉 | 人名 |
+| Zorad | 佐拉德 | 人名 |
+| Gavina | 加维娜 | 人名 |
+| Ugotha | 乌戈莎 | 人名 |
+| Snikka | 斯尼卡 | 人名 |
+| Natasha | 娜塔莎 | 人名 |
+| Anya | 安雅 | 人名 |
+| Lilly | 莉莉 | 人名 |
+| Elisabeth | 伊丽莎白 | 人名 |
+| Sabrina | 萨布丽娜 | 人名 |
+| Athia | 阿西娅 | 人名 |
+| Bridget | 布丽姬特 | 人名 |
+| Agatha | 阿加莎 | 人名 |
+| Hiba | 希芭 | 人名 |
+| Nyra | 妮拉 | 人名 |
+| Julia | 朱莉娅 | 人名 |
+| Liandra | 莉安德拉 | 人名 |
+| Helena | 海伦娜 | 人名 |
+| Yasmine | 雅斯敏 | 人名 |
 | Rumah village | 鲁玛村 | 地名 |
 | Rumah | 鲁玛 | 地名 |
 | Kirlic | 基尔利克 | 地名 |
@@ -57,6 +111,26 @@
 | Old Boar Inn | 老野猪旅店 | 地点 |
 | Golden Goose | 金鹅酒馆 | 地点 |
 | Drunken Fox | 醉狐酒馆 | 地点 |
+| Coldstone | 冷石 | 地名 |
+| Darkholt | 暗林 | 地名 |
+| Darkwood | 黑森林 | 地名 |
+| Elderwood | 长生木 | 地名 |
+| Madrag Kaz | 马德拉格·卡兹 | 地名 |
+| Silverroot | 银根草 | 地名 |
+| Winterhowl | 冬嚎 | 专有名词 |
+| Demonkey | 魔猴 | 专有名词 |
+| Darkelves | 黑暗精灵 | 种族 |
+| Anticonvulsant Poultice | 抗惊厥药膏 | 道具 |
+| Ar'ganas | 阿尔加纳斯 | 专有名词 |
+| shadow-jewel | 暗影宝石 | 道具 |
+| obsidian mirror | 黑曜石镜 | 道具 |
+| Old Oak | 老橡树 | 地点 |
+| Loren's Lake | 洛伦湖 | 地点 |
+| Blackjack | 二十一点 | 游戏 |
+| Backstab | 背刺 | 战斗技能 |
+| Dwarven enclave | 矮人聚居地 | 地点 |
+| Goblin village | 哥布林村庄 | 地点 |
+| Raven | 渡鸦 | 人名 |
 | Dexterity | 灵巧 | 天赋 |
 | Perception | 感知 | 天赋 |
 | Hunting | 狩猎 | 天赋 |

@@ -1,0 +1,24 @@
+{
+  "chapter": "wt-gavina",
+  "batch": 3,
+  "output": "translation/drafts/wt-gavina/003.json",
+  "instruction": "翻译前先阅读 translation_rules 和 glossary。逐块完整翻译，不摘要、不增删条件；保留编号、链接、图片和加粗。返回以原块 ID 为键、中文 Markdown 为值的 JSON。不可改写已有草稿或 docs。",
+  "translation_rules": "# 翻译规则\n\n## 翻译前必读\n\n翻译任何新章节前，先完整阅读本文件和 `glossary.md`。术语表的中文列是统一译名来源；若缺少人名、地名或专有名词的中文定名，先向维护者确认，不自行杜撰。\n\n## 正文规则\n\n- 必须逐块完整翻译，不摘要、不删减、不合并原文内容。\n- 保留标题层级、列表、图片、链接、步骤顺序、数字、加粗和其他重要 Markdown 格式。\n- 普通句子、短句、对话选项、按钮、菜单和任务名全部译为自然中文；不得因文本较短而保留英文。\n- 任务名在正文中只使用中文译名，不在中文后附原文括号。\n- 人名、地名、明确需要保留英文对照的专有名词，以及术语表明确标注保留的游戏缩写，可按术语表保留英文。\n- 不覆盖已有 `docs/` 内容；草稿结构必须通过现有校验后，才可使用 `assemble` 生成新章节。\n",
+  "glossary": "# 术语表\n\n首次或关键位置保留英文，便于对照游戏界面与搜索。修改本表不会自动改写已有中文正文；已有译文请同步修订，后续批次读取本表。\n\n| 原文 | 中文 | 说明 |\n| --- | --- | --- |\n| A Struggle With Sin | A Struggle With Sin | 游戏标题暂保留英文 |\n| MC / Main Character | 主角 | |\n| Affection / A | 好感度 / A | 保留攻略数值缩写 |\n| Corruption / C | 堕落度 / C | C 同时可能是制作快捷键，按上下文区分 |\n| Lust | 欲望值 | |\n| Mira | 米拉 | 人名 |\n| Frisha | 弗莉莎 | 人名 |\n| Penny | 佩妮 | 人名 |\n| Aidalin | 艾达琳 | 人名 |\n| Arianna | 阿丽安娜 | 人名 |\n| Carmen | 卡门 | 人名 |\n| Verena | 维蕾娜 | 人名 |\n| Lyvia | 莉维娅 | 人名 |\n| Rose | 罗斯 | 人名 |\n| Melissa | 梅丽莎 | 人名 |\n| Imawyn | 伊玛温 | 人名 |\n| Maui | 毛伊 | 人名 |\n| Syfa | 西法 | 人名 |\n| Heather | 希瑟 | 人名 |\n| Roderic | 罗德里克 | 人名 |\n| Ophilia | 奥菲莉娅 | 人名 |\n| Grant | 格兰特 | 人名 |\n| Bjorn | 比约恩 | 人名 |\n| Tessa | 泰莎 | 人名 |\n| Gevin | 格温 | 人名 |\n| Renold | 雷诺德 | 人名 |\n| Kim | 金 | 人名 |\n| Claire | 克莱尔 | 人名 |\n| Gurtak | 古尔塔克 | 人名 |\n| Umah | 乌玛 | 人名 |\n| Dasan | 达桑 | 人名 |\n| Raaisha | 拉伊莎 | 人名 |\n| Umin | 乌敏 | 人名 |\n| Kate | 凯特 | 人名 |\n| Katherin | 凯瑟琳 | 人名 |\n| Emily | 艾米莉 | 人名 |\n| Tia | 蒂娅 | 人名 |\n| Lucius | 卢修斯 | 人名 |\n| Corven | 科文 | 人名 |\n| Bianca | 比安卡 | 人名 |\n| John | 约翰 | 人名 |\n| Marcus | 马库斯 | 人名 |\n| Dave | 戴夫 | 人名 |\n| Rick | 瑞克 | 人名 |\n| Thomas | 托马斯 | 人名 |\n| Gwen | 格温 | 人名 |\n| Abraham | 亚伯拉罕 | 人名 |\n| Adson | 阿德森 | 人名 |\n| Alaira | 阿莱拉 | 人名 |\n| Antonius | 安东尼乌斯 | 人名 |\n| Bernard | 伯纳德 | 人名 |\n| Dultharon | 杜尔萨隆 | 人名 |\n| Eric | 埃里克 | 人名 |\n| Fanghul | 芳古尔 | 人名 |\n| Fanghun | 芳洪 | 人名 |\n| Fiona | 菲奥娜 | 人名 |\n| Francis | 弗朗西斯 | 人名 |\n| Gabriel | 加布里埃尔 | 人名 |\n| Giron | 吉隆 | 人名 |\n| Gritz | 格里茨 | 人名 |\n| Gromthul | 格罗姆苏尔 | 人名 |\n| Harvald | 哈瓦尔德 | 人名 |\n| Hekima | 赫基玛 | 人名 |\n| Henry | 亨利 | 人名 |\n| Isha | 伊莎 | 人名 |\n| Jorge | 豪尔赫 | 人名 |\n| Joseph | 约瑟夫 | 人名 |\n| Lodric | 洛德里克 | 人名 |\n| Loren | 洛伦 | 人名 |\n| Matthias | 马蒂亚斯 | 人名 |\n| Oliver | 奥利弗 | 人名 |\n| Palak | 帕拉克 | 人名 |\n| Parakis | 帕拉基斯 | 人名 |\n| Saiel | 赛尔 | 人名 |\n| Scorial | 斯科里尔 | 人名 |\n| Sophie | 苏菲 | 人名 |\n| Toren | 托伦 | 人名 |\n| Uldar | 乌尔达 | 人名 |\n| Van | 范 | 人名 |\n| Velthaze | 维尔萨泽 | 人名 |\n| Vilina | 维莉娜 | 人名 |\n| William | 威廉 | 人名 |\n| Zorad | 佐拉德 | 人名 |\n| Gavina | 加维娜 | 人名 |\n| Ugotha | 乌戈莎 | 人名 |\n| Snikka | 斯尼卡 | 人名 |\n| Natasha | 娜塔莎 | 人名 |\n| Anya | 安雅 | 人名 |\n| Lilly | 莉莉 | 人名 |\n| Elisabeth | 伊丽莎白 | 人名 |\n| Sabrina | 萨布丽娜 | 人名 |\n| Athia | 阿西娅 | 人名 |\n| Bridget | 布丽姬特 | 人名 |\n| Agatha | 阿加莎 | 人名 |\n| Hiba | 希芭 | 人名 |\n| Nyra | 妮拉 | 人名 |\n| Julia | 朱莉娅 | 人名 |\n| Liandra | 莉安德拉 | 人名 |\n| Helena | 海伦娜 | 人名 |\n| Yasmine | 雅斯敏 | 人名 |\n| Rumah village | 鲁玛村 | 地名 |\n| Rumah | 鲁玛 | 地名 |\n| Kirlic | 基尔利克 | 地名 |\n| Arenfield | 阿伦菲尔德 | 地名 |\n| Old Boar Inn | 老野猪旅店 | 地点 |\n| Golden Goose | 金鹅酒馆 | 地点 |\n| Drunken Fox | 醉狐酒馆 | 地点 |\n| Coldstone | 冷石 | 地名 |\n| Darkholt | 暗林 | 地名 |\n| Darkwood | 黑森林 | 地名 |\n| Elderwood | 长生木 | 地名 |\n| Madrag Kaz | 马德拉格·卡兹 | 地名 |\n| Silverroot | 银根草 | 地名 |\n| Winterhowl | 冬嚎 | 专有名词 |\n| Demonkey | 魔猴 | 专有名词 |\n| Darkelves | 黑暗精灵 | 种族 |\n| Dexterity | 灵巧 | 天赋 |\n| Perception | 感知 | 天赋 |\n| Hunting | 狩猎 | 天赋 |\n| Intelligence | 智力 | 天赋 |\n| Witchcraft | 巫术 | 天赋 |\n| Thievery | 盗窃 | 天赋 |\n| reading | 阅读 | 技能 |\n| Defensive Strike | 防御打击 | 战斗技能 |\n| Quickshot | 快速射击 | 战斗技能 |\n| Feign death potion | 假死药水 | 道具 |\n| Fire stones | 火石 | 道具 |\n| Tutorial gem | 教程宝石 | 道具 |\n| control your lust | 控制欲望 | 任务名 |\n| TP | TP | 原文未展开含义，保留 |\n| silver | 银币 | 货币 |\n| lockpicking | 开锁 | 技能 |\n| forging | 锻造 | 技能 |\n| lookout | 瞭望处 | 地点描述 |\n| Baron | 男爵 | 称谓 |\n| wanita | 伴侣 | 身份称谓 |\n| cumwine | 精液酒 | 道具 |\n| spidersilk | 蛛丝 | 材料 |\n",
+  "blocks": [
+    {
+      "id": "0022",
+      "markdown": "21. On higher corruption Gavina has slightly different dialog during sex and after having anal sex 10 times she will start to enjoy it.",
+      "classes": [
+        "new-0-5-7-1"
+      ]
+    },
+    {
+      "id": "0023",
+      "markdown": "22. After completing the first step of the quest around the goblins (after you entered the deep mine) Gavina will wait at home with a small surprise for you.",
+      "classes": [
+        "new-0-6-0-0"
+      ]
+    }
+  ]
+}

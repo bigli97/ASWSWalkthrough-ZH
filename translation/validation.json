@@ -38,6 +38,36 @@
       "list_items": 43
     },
     {
+      "chapter": "wt-church",
+      "blocks": 17,
+      "images": 0,
+      "list_items": 26
+    },
+    {
+      "chapter": "wt-monastery",
+      "blocks": 23,
+      "images": 0,
+      "list_items": 34
+    },
+    {
+      "chapter": "wt-katherin",
+      "blocks": 23,
+      "images": 0,
+      "list_items": 26
+    },
+    {
+      "chapter": "wt-kate",
+      "blocks": 81,
+      "images": 0,
+      "list_items": 94
+    },
+    {
+      "chapter": "wt-claire",
+      "blocks": 29,
+      "images": 2,
+      "list_items": 32
+    },
+    {
       "chapter": "wt-carmen",
       "blocks": 15,
       "images": 0,
@@ -48,6 +78,12 @@
       "blocks": 12,
       "images": 1,
       "list_items": 11
+    },
+    {
+      "chapter": "wt-frisha",
+      "blocks": 25,
+      "images": 0,
+      "list_items": 45
     },
     {
       "chapter": "wt-verena",
@@ -90,7 +126,169 @@
       "blocks": 9,
       "images": 0,
       "list_items": 6
+    },
+    {
+      "chapter": "wt-bianca",
+      "blocks": 42,
+      "images": 0,
+      "list_items": 41
+    },
+    {
+      "chapter": "wt-gavina",
+      "blocks": 23,
+      "images": 0,
+      "list_items": 22
+    },
+    {
+      "chapter": "wt-ugotha",
+      "blocks": 6,
+      "images": 0,
+      "list_items": 7
+    },
+    {
+      "chapter": "wt-snikka",
+      "blocks": 3,
+      "images": 0,
+      "list_items": 2
+    },
+    {
+      "chapter": "wt-natasha",
+      "blocks": 12,
+      "images": 0,
+      "list_items": 10
+    },
+    {
+      "chapter": "wt-ophilia",
+      "blocks": 23,
+      "images": 0,
+      "list_items": 20
+    },
+    {
+      "chapter": "wt-anya",
+      "blocks": 22,
+      "images": 0,
+      "list_items": 38
+    },
+    {
+      "chapter": "wt-penny",
+      "blocks": 65,
+      "images": 0,
+      "list_items": 67
+    },
+    {
+      "chapter": "wt-lilly",
+      "blocks": 9,
+      "images": 0,
+      "list_items": 10
+    },
+    {
+      "chapter": "wt-elisabeth",
+      "blocks": 5,
+      "images": 0,
+      "list_items": 5
+    },
+    {
+      "chapter": "wt-gwen",
+      "blocks": 15,
+      "images": 4,
+      "list_items": 17
+    },
+    {
+      "chapter": "wt-sabrina",
+      "blocks": 10,
+      "images": 0,
+      "list_items": 9
+    },
+    {
+      "chapter": "wt-athia",
+      "blocks": 19,
+      "images": 0,
+      "list_items": 20
+    },
+    {
+      "chapter": "wt-bridget",
+      "blocks": 12,
+      "images": 0,
+      "list_items": 11
+    },
+    {
+      "chapter": "wt-agatha",
+      "blocks": 5,
+      "images": 0,
+      "list_items": 9
+    },
+    {
+      "chapter": "wt-heather",
+      "blocks": 8,
+      "images": 0,
+      "list_items": 7
+    },
+    {
+      "chapter": "wt-rumah",
+      "blocks": 4,
+      "images": 0,
+      "list_items": 6
+    },
+    {
+      "chapter": "wt-raaisha",
+      "blocks": 22,
+      "images": 0,
+      "list_items": 21
+    },
+    {
+      "chapter": "wt-hiba",
+      "blocks": 5,
+      "images": 0,
+      "list_items": 5
+    },
+    {
+      "chapter": "wt-nyra",
+      "blocks": 11,
+      "images": 0,
+      "list_items": 10
+    },
+    {
+      "chapter": "wt-umah",
+      "blocks": 23,
+      "images": 0,
+      "list_items": 22
+    },
+    {
+      "chapter": "wt-darkholt",
+      "blocks": 22,
+      "images": 0,
+      "list_items": 26
+    },
+    {
+      "chapter": "wt-mansion",
+      "blocks": 13,
+      "images": 2,
+      "list_items": 11
+    },
+    {
+      "chapter": "wt-julia",
+      "blocks": 10,
+      "images": 0,
+      "list_items": 11
+    },
+    {
+      "chapter": "wt-liandra",
+      "blocks": 18,
+      "images": 0,
+      "list_items": 42
+    },
+    {
+      "chapter": "wt-helena",
+      "blocks": 21,
+      "images": 0,
+      "list_items": 25
+    },
+    {
+      "chapter": "wt-yasmine",
+      "blocks": 23,
+      "images": 0,
+      "list_items": 22
     }
   ],
-  "site_links_checked": 4475
+  "site_links_checked": 4538
 }

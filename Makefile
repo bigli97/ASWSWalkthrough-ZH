@@ -1,4 +1,4 @@
-PY = .venv/bin/python
+PY ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 .DEFAULT_GOAL := help
 .PHONY: help setup extract pending assemble preview build check pdf
 help:

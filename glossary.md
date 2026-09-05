@@ -10,6 +10,12 @@
 | Corruption / C | 堕落度 / C | C 同时可能是制作快捷键，按上下文区分 |
 | Lust | 欲望值 | |
 | Mira | 米拉 | 人名 |
+| Frisha | 弗莉莎 | 人名 |
+| Penny | 佩妮 | 人名 |
+| Aidalin | 艾达琳 | 人名 |
+| Arianna | 阿丽安娜 | 人名 |
+| Syfa | 西法 | 人名 |
+| Heather | 希瑟 | 人名 |
 | Kate | 凯特 | 人名；不与 Katherin 混用 |
 | Katherin | 凯瑟琳 | 人名 |
 | Emily | 艾米莉 | 人名 |

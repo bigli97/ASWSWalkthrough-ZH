@@ -18,7 +18,25 @@
       "blocks": 16,
       "images": 3,
       "list_items": 16
+    },
+    {
+      "chapter": "wt-mira",
+      "blocks": 51,
+      "images": 1,
+      "list_items": 43
+    },
+    {
+      "chapter": "wt-lucius",
+      "blocks": 12,
+      "images": 1,
+      "list_items": 11
+    },
+    {
+      "chapter": "wt-corven",
+      "blocks": 6,
+      "images": 0,
+      "list_items": 5
     }
   ],
-  "site_links_checked": 4444
+  "site_links_checked": 4461
 }

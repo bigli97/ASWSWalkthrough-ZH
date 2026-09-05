@@ -19,7 +19,8 @@ SOURCE = ROOT.parent / 'ASWSWalkthrough'
 TRANS = ROOT / 'translation'
 BUILD = ROOT / '.build' / 'docs'
 SAMPLES = ['wt-info', 'wt-tips', 'wt-intro']
-TITLES = {'wt-info': '基本信息', 'wt-tips': '技巧与窍门', 'wt-intro': '序章'}
+TITLES = {'wt-info': '基本信息', 'wt-tips': '技巧与窍门', 'wt-intro': '序章',
+          'wt-mira': '米拉', 'wt-lucius': '卢修斯', 'wt-corven': '科文'}
 PLACES = {'wt-house', 'wt-church', 'wt-monastery', 'wt-rumah', 'wt-darkholt', 'wt-mansion'}
 
 
@@ -324,6 +325,33 @@ def navigation():
     return nav
 
 
+def sync_readme():
+    readme = ROOT / 'README.md'
+    text = readme.read_text(encoding='utf-8')
+    pattern = r'(<!-- reviewed-chapters:start -->\n)(.*?)(<!-- reviewed-chapters:end -->)'
+    match = re.search(pattern, text, re.S)
+    if match is None:
+        raise ValueError('README 缺少已审核章节标记，无法同步。')
+    chapters = []
+    for chapter in manifest()['chapters']:
+        path = ROOT / 'docs' / chapter['file']
+        if not path.exists():
+            continue
+        content = path.read_text(encoding='utf-8')
+        if '> 本章中文译文已通过人工审核。' not in content:
+            continue
+        title = re.search(r'^# (.+)$', content, re.M)
+        if title is None:
+            raise ValueError('已审核章节缺少一级标题：' + chapter['file'])
+        chapters.append('- ' + title.group(1))
+    if not chapters:
+        raise ValueError('未找到已审核的中文章节，无法同步 README。')
+    updated = text[:match.start(2)] + '\n'.join(chapters) + '\n' + text[match.start(3):]
+    if updated != text:
+        write(readme, updated)
+    print('README 已同步 %d 个已审核章节。' % len(chapters))
+
+
 def check():
     data = manifest()
     report = {'chapters': len(data['chapters']), 'samples': [], 'site_links_checked': 0}
@@ -409,10 +437,12 @@ def pdf():
 
 def main():
     parser = argparse.ArgumentParser(description='中文攻略工程命令')
-    parser.add_argument('command', choices=['extract', 'pending', 'assemble', 'preview', 'build', 'check', 'pdf'])
+    parser.add_argument('command', choices=['extract', 'pending', 'assemble', 'sync-readme', 'preview', 'build', 'check', 'pdf'])
     args = parser.parse_args()
     try:
-        if args.command in ['extract', 'pending', 'assemble', 'check', 'pdf']:
+        if args.command == 'sync-readme':
+            sync_readme()
+        elif args.command in ['extract', 'pending', 'assemble', 'check', 'pdf']:
             globals()[args.command]()
         else:
             stage()

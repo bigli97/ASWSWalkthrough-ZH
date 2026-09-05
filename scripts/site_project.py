@@ -23,7 +23,18 @@ TITLES = {'wt-info': '基本信息', 'wt-tips': '技巧与窍门', 'wt-intro': '
           'wt-house': '房屋翻修', 'wt-mc': '主角', 'wt-mira': '米拉',
           'wt-carmen': '卡门', 'wt-lucius': '卢修斯', 'wt-verena': '维蕾娜',
           'wt-rose': '罗斯', 'wt-corven': '科文', 'wt-john': '约翰',
-          'wt-melissa': '梅丽莎', 'wt-imawyn': '伊玛温', 'wt-maui': '毛伊'}
+          'wt-melissa': '梅丽莎', 'wt-imawyn': '伊玛温', 'wt-maui': '毛伊',
+          'wt-church': '教堂', 'wt-monastery': '修道院', 'wt-katherin': '凯瑟琳',
+          'wt-kate': '凯特', 'wt-claire': '克莱尔', 'wt-frisha': '弗莉莎',
+          'wt-bianca': '比安卡', 'wt-gavina': '加维娜', 'wt-ugotha': '乌戈莎',
+          'wt-snikka': '斯尼卡', 'wt-natasha': '娜塔莎', 'wt-ophilia': '奥菲莉娅',
+          'wt-anya': '安雅', 'wt-penny': '佩妮', 'wt-lilly': '莉莉',
+          'wt-elisabeth': '伊丽莎白', 'wt-gwen': '格温', 'wt-sabrina': '萨布丽娜',
+          'wt-athia': '阿西娅', 'wt-bridget': '布丽姬特', 'wt-agatha': '阿加莎',
+          'wt-heather': '希瑟', 'wt-rumah': '鲁玛村', 'wt-raaisha': '拉伊莎',
+          'wt-hiba': '希芭', 'wt-nyra': '妮拉', 'wt-umah': '乌玛',
+          'wt-darkholt': '重建暗林', 'wt-mansion': '市长宅邸', 'wt-julia': '朱莉娅',
+          'wt-liandra': '莉安德拉', 'wt-helena': '海伦娜', 'wt-yasmine': '雅斯敏'}
 PLACES = {'wt-house', 'wt-church', 'wt-monastery', 'wt-rumah', 'wt-darkholt', 'wt-mansion'}
 
 

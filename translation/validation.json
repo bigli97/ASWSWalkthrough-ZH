@@ -14,10 +14,22 @@
       "list_items": 6
     },
     {
+      "chapter": "wt-house",
+      "blocks": 10,
+      "images": 0,
+      "list_items": 10
+    },
+    {
       "chapter": "wt-intro",
       "blocks": 16,
       "images": 3,
       "list_items": 16
+    },
+    {
+      "chapter": "wt-mc",
+      "blocks": 23,
+      "images": 0,
+      "list_items": 22
     },
     {
       "chapter": "wt-mira",
@@ -26,17 +38,59 @@
       "list_items": 43
     },
     {
+      "chapter": "wt-carmen",
+      "blocks": 15,
+      "images": 0,
+      "list_items": 14
+    },
+    {
       "chapter": "wt-lucius",
       "blocks": 12,
       "images": 1,
       "list_items": 11
     },
     {
+      "chapter": "wt-verena",
+      "blocks": 29,
+      "images": 0,
+      "list_items": 28
+    },
+    {
+      "chapter": "wt-rose",
+      "blocks": 14,
+      "images": 0,
+      "list_items": 12
+    },
+    {
       "chapter": "wt-corven",
       "blocks": 6,
       "images": 0,
       "list_items": 5
+    },
+    {
+      "chapter": "wt-john",
+      "blocks": 18,
+      "images": 0,
+      "list_items": 16
+    },
+    {
+      "chapter": "wt-melissa",
+      "blocks": 24,
+      "images": 0,
+      "list_items": 22
+    },
+    {
+      "chapter": "wt-imawyn",
+      "blocks": 28,
+      "images": 0,
+      "list_items": 26
+    },
+    {
+      "chapter": "wt-maui",
+      "blocks": 9,
+      "images": 0,
+      "list_items": 6
     }
   ],
-  "site_links_checked": 4461
+  "site_links_checked": 4475
 }

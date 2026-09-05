@@ -20,7 +20,10 @@ TRANS = ROOT / 'translation'
 BUILD = ROOT / '.build' / 'docs'
 SAMPLES = ['wt-info', 'wt-tips', 'wt-intro']
 TITLES = {'wt-info': '基本信息', 'wt-tips': '技巧与窍门', 'wt-intro': '序章',
-          'wt-mira': '米拉', 'wt-lucius': '卢修斯', 'wt-corven': '科文'}
+          'wt-house': '房屋翻修', 'wt-mc': '主角', 'wt-mira': '米拉',
+          'wt-carmen': '卡门', 'wt-lucius': '卢修斯', 'wt-verena': '维蕾娜',
+          'wt-rose': '罗斯', 'wt-corven': '科文', 'wt-john': '约翰',
+          'wt-melissa': '梅丽莎', 'wt-imawyn': '伊玛温', 'wt-maui': '毛伊'}
 PLACES = {'wt-house', 'wt-church', 'wt-monastery', 'wt-rumah', 'wt-darkholt', 'wt-mansion'}
 
 
@@ -163,6 +166,10 @@ def pending():
     data = manifest()
     remaining = []
     glossary = (ROOT / 'glossary.md').read_text() if (ROOT / 'glossary.md').exists() else ''
+    rules_path = ROOT / 'translation-rules.md'
+    if not rules_path.exists():
+        raise ValueError('缺少翻译规则文件：' + str(rules_path))
+    translation_rules = rules_path.read_text(encoding='utf-8')
     for c in data['chapters']:
         if c['id'] not in data['samples']:
             continue
@@ -174,8 +181,8 @@ def pending():
                 validate_batch(target, ids, lookup)
                 continue
             pack = {'chapter': c['id'], 'batch': i, 'output': str(target.relative_to(ROOT)),
-                    'instruction': '逐块完整翻译，不摘要、不增删条件；保留编号、链接、图片和加粗。返回以原块 ID 为键、中文 Markdown 为值的 JSON。不可改写已有草稿或 docs。',
-                    'glossary': glossary, 'blocks': [lookup[x] for x in ids]}
+                    'instruction': '翻译前先阅读 translation_rules 和 glossary。逐块完整翻译，不摘要、不增删条件；保留编号、链接、图片和加粗。返回以原块 ID 为键、中文 Markdown 为值的 JSON。不可改写已有草稿或 docs。',
+                    'translation_rules': translation_rules, 'glossary': glossary, 'blocks': [lookup[x] for x in ids]}
             dump(TRANS / 'requests' / c['id'] / ('%03d.json' % i), pack)
             remaining.append('%s/%03d' % (c['id'], i))
     dump(TRANS / 'pending.json', remaining)
@@ -284,14 +291,11 @@ def _stage():
     rows = ['# 全部章节', '', '按原站入口排序。当前仅发布 3 章中文初译；其他章节提供本地英文原文，不表示已完成翻译。', '', '| 顺序 | 章节 | 分类 | 状态 |', '| --- | --- | --- | --- |']
     local_paths = {c['id']: c['file'].replace('.md', '.html') for c in data['chapters']}
     local_paths['hidden-sections'] = 'original-ui.html'
-    ready = []
     for c in data['chapters']:
         available = (ROOT / 'docs' / c['file']).exists()
         title = TITLES.get(c['id'], c['title'])
         rows.append('| %02d | [%s](%s) | %s | %s |' % (c['order'], title, c['file'], c['category'], '中文初译' if available else '待翻译'))
-        if available:
-            ready.append('[%s](%s)' % (title, c['file']))
-        else:
+        if not available:
             write(BUILD / c['file'], '---\nsearch:\n  exclude: true\n---\n\n# ' + c['title'] + '\n\n本章尚未翻译，未纳入第一阶段样例。\n\n[阅读本地英文原文](reference/' + c['id'] + '.html) · [返回全部章节](catalog.md)\n')
         raw = BeautifulSoup((ROOT / 'page' / 'pages' / (c['id'] + '.html')).read_text(), 'html.parser')
         for a in raw.select('[data-target]'):
@@ -304,7 +308,6 @@ def _stage():
             v.string = data['version']
         write(BUILD / 'reference' / (c['id'] + '.html'), '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + html.escape(c['title']) + '</title><style>body{max-width:900px;margin:30px auto;padding:0 20px;font:17px/1.8 system-ui}img{max-width:100%}a{color:#1769aa}</style><p><a href="../catalog.html">返回中文攻略目录</a> · 未翻译原文</p><h1>' + html.escape(c['title']) + '</h1>' + str(raw) + '</html>')
     write(BUILD / 'catalog.md', '\n'.join(rows) + '\n')
-    write(BUILD / 'index.md', '# A Struggle With Sin\n\n## 中文攻略 · 第一阶段\n\n按任务条件查找步骤，保留原攻略的图片、分支与数值。当前版本 **' + data['version'] + '**，共 **53** 个原文章节，已提供 **' + str(len(ready)) + '** 个中文样例。\n\n### 开始阅读\n\n' + '\n\n'.join('- ' + x for x in ready) + '\n\n### 查找你需要的线索\n\n使用顶部搜索框，可试搜 **假死药水**、**感知**、**米拉**、**防御打击**、**隐秘小路**。支持中文和保留的英文术语。\n\n[浏览全部章节](catalog.md) · [查看术语表](glossary.md)\n\n!!! info "本次验证范围"\n    中文章节尚待人工审核；其他章节明确标记为待翻译，并附本地原文入口。外部作者链接需要联网，攻略正文和搜索可在本地离线使用。\n\n原攻略：Chyos；原站整理：Aloof Tooth。[原始项目](https://github.com/AloofTooth/ASWSWalkthrough)。\n')
     for name in ['index.md', 'catalog.md', 'original-ui.md']:
         path = BUILD / name
         write(path, '---\nsearch:\n  exclude: true\n---\n\n' + path.read_text())
@@ -325,13 +328,7 @@ def navigation():
     return nav
 
 
-def sync_readme():
-    readme = ROOT / 'README.md'
-    text = readme.read_text(encoding='utf-8')
-    pattern = r'(<!-- reviewed-chapters:start -->\n)(.*?)(<!-- reviewed-chapters:end -->)'
-    match = re.search(pattern, text, re.S)
-    if match is None:
-        raise ValueError('README 缺少已审核章节标记，无法同步。')
+def reviewed_chapters():
     chapters = []
     for chapter in manifest()['chapters']:
         path = ROOT / 'docs' / chapter['file']
@@ -343,13 +340,37 @@ def sync_readme():
         title = re.search(r'^# (.+)$', content, re.M)
         if title is None:
             raise ValueError('已审核章节缺少一级标题：' + chapter['file'])
-        chapters.append('- ' + title.group(1))
+        chapters.append((title.group(1), chapter['file']))
     if not chapters:
-        raise ValueError('未找到已审核的中文章节，无法同步 README。')
-    updated = text[:match.start(2)] + '\n'.join(chapters) + '\n' + text[match.start(3):]
+        raise ValueError('未找到已审核的中文章节，无法同步发布信息。')
+    return chapters
+
+
+def sync_marked_section(path, pattern, content, label):
+    text = path.read_text(encoding='utf-8')
+    match = re.search(pattern, text, re.S)
+    if match is None:
+        raise ValueError('%s 缺少自动同步标记，无法同步。' % label)
+    updated = text[:match.start(2)] + content + text[match.start(3):]
     if updated != text:
-        write(readme, updated)
+        write(path, updated)
+
+
+def sync_readme():
+    chapters = reviewed_chapters()
+    sync_marked_section(ROOT / 'README.md', r'(<!-- reviewed-chapters:start -->\n)(.*?)(<!-- reviewed-chapters:end -->)',
+                        '\n'.join('- ' + title for title, unused in chapters) + '\n', 'README')
     print('README 已同步 %d 个已审核章节。' % len(chapters))
+
+
+def sync_homepage():
+    chapters = reviewed_chapters()
+    content = ('当前版本 **%s**，已通过人工审核的中文章节共 **%d** 章。\n\n### 开始阅读\n\n' %
+               (manifest()['version'], len(chapters)))
+    content += '\n\n'.join('- [%s](%s)' % chapter for chapter in chapters) + '\n'
+    sync_marked_section(ROOT / 'docs' / 'index.md', r'(<!-- homepage-reviewed:start -->\n)(.*?)(<!-- homepage-reviewed:end -->)',
+                        content, '首页')
+    print('首页已同步 %d 个已审核章节。' % len(chapters))
 
 
 def check():
@@ -437,11 +458,13 @@ def pdf():
 
 def main():
     parser = argparse.ArgumentParser(description='中文攻略工程命令')
-    parser.add_argument('command', choices=['extract', 'pending', 'assemble', 'sync-readme', 'preview', 'build', 'check', 'pdf'])
+    parser.add_argument('command', choices=['extract', 'pending', 'assemble', 'sync-readme', 'sync-homepage', 'preview', 'build', 'check', 'pdf'])
     args = parser.parse_args()
     try:
         if args.command == 'sync-readme':
             sync_readme()
+        elif args.command == 'sync-homepage':
+            sync_homepage()
         elif args.command in ['extract', 'pending', 'assemble', 'check', 'pdf']:
             globals()[args.command]()
         else:

@@ -22,6 +22,7 @@ pdf:
 	$(PY) scripts/site.py pdf
 publish:
 	$(PY) scripts/site.py sync-readme
+	$(PY) scripts/site.py sync-homepage
 	$(MAKE) check
 	$(MAKE) build
 	git add -A

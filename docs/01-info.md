@@ -86,7 +86,7 @@
 - 推进[米拉（Mira）](06-mira.md)的任务，直到阅读达到 2 级。
 
 <!-- source:0026 -->
-- [卢修斯（Lucius）](14-lucius.md)的“控制欲望”（control your lust）任务，需要先学会阅读。
+- [卢修斯（Lucius）](14-lucius.md)的“控制欲望”任务，需要先学会阅读。
 
 <!-- source:0027 -->
 - 通过[比安卡（Bianca）](26-bianca.md)的任务学习开锁。

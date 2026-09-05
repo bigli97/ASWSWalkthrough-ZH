@@ -7,7 +7,7 @@
 
 <!-- source:0002 -->
 游戏内教程对天赋检定有更详细的说明。  
-打开物品栏（Inventory）> 关键物品（Key items）> 教程宝石（Tutorial gem）。
+打开物品栏 > 关键物品 > 教程宝石（Tutorial gem）。
 
 <!-- source:0003 -->
 ## 饱食度

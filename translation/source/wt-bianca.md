@@ -1,0 +1,94 @@
+# Bianca
+
+Arenfield, near Darkwood to the North. Teaches lockpicking. "Student" to [Gavina](27-gavina.md).
+
+1. Talk to her during the night (0:00-6:00).
+
+2. Wait a day and then talk to her again. She will ask you to find a way into the mayor's mansion.
+
+3. Give the guard near the bridge wine and enter the cave near the river.
+
+4. Return to Bianca and tell her what you found out, she will teach you how to lockpick.
+
+5. She offers you more rewards if you break into the mansion and steal a stone for her.
+
+6. See [mayor's mansion](49-mansion.md) on how to get in.
+
+7. Wait past midnight and move to the door SE on the 2nd floor. Be careful to not get caught by the patrolling guard and don't try to get there if the house is alarmed!
+
+8. Open the door with lockpicking. If you fail and the guard comes close get in the room to the left to hide.
+
+9. Once inside pick up the stone and loot the box for extra gold.
+
+10. Return the stone to Bianca, she will offer you to join her to get to know her master.
+
+11. Wait a day then talk to Bianca again, she will lead you through a hidden path to her home.
+
+12. After the conversation with her master (This starts a new quest) go to her room at 6pm and talk to her to learn how to sneak. Since this completes her part on Gavina's quest I will continue to document it at her section.
+    
+    - Talk to Bianca outside her house at night (she goes there every 2nd night).
+
+13. Talk to her again inside her room at 6pm and agree to kiss her (you can of course stop before that if you don't want any relationship with her).
+
+14. The next day talk to her again at 6pm, she will suggest a fair exchange of knowledge. This opens the options to start training with her to improve your stealth skill.
+
+15. You can always repeat an already seen scene by kissing her and then selecting the scene you want.
+
+16. To unlock the new stages you have to increase your thievery talent.
+
+17. After each new training session you must wait a day before the next can be done.
+
+18. There is now also a small stretching scene when Bianca leaves the house every 2nd night to visit Arenfield. Visit her in her room at midnight before she dresses.
+
+19. The fourth time you do the training with her (at 5 Thievery skill points) you have to make a decision weather you want to go the corruption or love route with Bianca.
+    
+    **Love route:**  
+    After you had the talk with Gavina visit Bianca's room. (If you already started having Sex with Gavina this will bring up a choice about if you want to continue the things with Gavina)After that some dialogue will change and you can now sleep in Bianca's room with her if you visit her at 9am when she goes to bed.
+    
+    **Corruption route:**  
+    If Bianca is already corrupted enough (5+C) or if she had sex with goblins too often (5+times) she will be fine with having sex with you. If you passed this point and she wasn't ready yet you can get to this by kissing her naked during your "training" with her.
+
+20. If Bianca is at 5C+ and not satisfied (Bianca had no sex on that day, only on love route) she will now start masturbating in the morning. If she's on the corruption route she will do this every morning now.
+
+21. At 6 Thievery Bianca will teach you the Backstab, while in stealth you can now by touching an enemy try to kill him instantly. This will depend on a dexterity chech which will run in the background.
+
+22. This will now also enable you to train anal with Bianca. Follow the quest and talk to Tia (either in Katherin's house or in Rumah) then bring the new toy to Bianca. She will start to train with it, which will take a few days. You can watch her in the morning when she is going to bed.
+
+23. Once she got used to it you can walk in on her.
+
+24. After the completion of the Quest around Gavina and the Dwaven enclave Bianca will now also show you a new dress she is going to wear now. After that you can see her sitting in it near Arenfield at night. If your relationship with her is high enough you can also have sex with her there and if you had anal sex with her 3+ times she is also willing to do that (this scene has been expanded in 0.6.0.0).
+
+25. After you secured the mine with your mercenaries (Lyvia's quest) wait a week then at the camp, Lyvia must be present, she will inform you about an attack on the mine by goblins. With this news visit Gavina and talk about the mine.
+
+26. Go to the mine to find Bianca waiting for you, together with her you have to defeat the goblin camps on the upper level of the mine again. When this is done go to the top right corner of the mine where stairs lead you to the lower level.
+
+27. You now must defeat Snikka 2 times. After you defeated her once she will respawn 4 days later. (in the meantime mine Dultharon ore and show it to John, you can then forge new armor and weapons from it).
+
+28. The next day at noon go to the top left corner where the small pond is (in the deep mine). Then talk to Snikka to get to the Goblin village Fanghun.
+
+29. After sleeping in the hut talk to Ugotha and she will ask you to bring her 20 Dultharon ore. (If you don't have that many with you you can talk to the miners in the deep mine, by chance they will give you some. You can also kill them but be aware that the MC is bound at this point and will not fight the goblins).
+
+30. After the ore is delivered wait another day and then head out to the dwarven settlement (where you were with Gavina before - Upper mine North-West).
+
+31. After the Darkelves are defeated you can now choose to deepen your connection with the goblins. This will allow benefits for the war in the future of the story and depending on who you bonded to (currently only Ugotha is available for that) different progression for them is available.
+
+32. Return to Gavina and tell her about the events in the Mine. This will unlock Bianca as a companion and she will from now on be able to join you outside the mine.
+
+33. If you completed Gavina's story up to the point where she got her new clothes, have sex with Bianca in her room. She will want to talk about that.
+
+34. Repeat that and Bianca will consider sharing you with her mother.
+
+35. After telling Gavina about this (have sex with her in her bedroom) she will be interested in going a step further.
+
+36. The next time when having sex with Bianca and having another round with her (make sure to not cum inside her or she will be against it) she will join in.
+
+37. If you or others came inside Bianca 10 times she will have another dialog the next time you had sex with her telling you that she no longer has a problem with you cumming inside her.
+
+## NTR:
+
+25. Should you left Bianca to the goblins too long, or she had sex with them during the quest (5+ times). A goblin will visit her in the valley near the house (she goes there every 2nd night).  
+    You can scare the goblin away, which will end the encounter or if you decide to let him stay a scene with him and Bianca is possible: for that Bianca needs C10+, it will take about a weak until Bianca succumbs to his charms.
+
+26. Alternatively you can ask Bianca to befriend Gritz when she is at Fanghul. First talk to Gritz, then to Bianca. Depending on route you then need to talk to Bianca again after a few days and tell her to push more agressively (which will lead to her having sex with Gritz). If you did train anal with Bianca at least 5 times you can join in when they have sex at night.
+
+27. There is also a defeat scene for Bianca & the rest of the group should you be beaten up by goblins, both in the normal mine or in the deep mine.

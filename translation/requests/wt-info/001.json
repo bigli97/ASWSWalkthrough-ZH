@@ -1,0 +1,85 @@
+{
+  "chapter": "wt-info",
+  "batch": 1,
+  "output": "translation/drafts/wt-info/001.json",
+  "instruction": "逐块完整翻译，不摘要、不增删条件；保留编号、链接、图片和加粗。返回以原块 ID 为键、中文 Markdown 为值的 JSON。不可改写已有草稿或 docs。",
+  "glossary": "# 术语表\n\n第一阶段暂定译名，供人工修订。首次或关键位置保留英文，便于对照游戏界面与搜索。修改本表不会自动改写已有中文正文；已有译文请同步修订，后续批次读取本表。\n\n| 原文 | 中文 | 说明 |\n| --- | --- | --- |\n| A Struggle With Sin | A Struggle With Sin | 游戏标题暂保留英文 |\n| MC / Main Character | 主角 | |\n| Affection / A | 好感度 / A | 保留攻略数值缩写 |\n| Corruption / C | 堕落度 / C | C 同时可能是制作快捷键，按上下文区分 |\n| Lust | 欲望值 | |\n| Mira | 米拉 | 人名 |\n| Kate | 凯特 | 人名；不与 Katherin 混用 |\n| Katherin | 凯瑟琳 | 人名 |\n| Emily | 艾米莉 | 人名 |\n| Tia | 蒂娅 | 人名 |\n| Lucius | 卢修斯 | 人名 |\n| Corven | 科文 | 人名 |\n| Bianca | 比安卡 | 人名 |\n| John | 约翰 | 人名 |\n| Marcus | 马库斯 | 人名 |\n| Dave | 戴夫 | 人名 |\n| Rick | 瑞克 | 人名 |\n| Thomas | 托马斯 | 人名 |\n| Gwen | 格温 | 人名 |\n| Rumah village | 鲁玛村 | 地名 |\n| Dexterity | 灵巧 | 天赋 |\n| Perception | 感知 | 天赋 |\n| Hunting | 狩猎 | 天赋 |\n| Intelligence | 智力 | 天赋 |\n| Witchcraft | 巫术 | 天赋 |\n| Thievery | 盗窃 | 天赋 |\n| reading | 阅读 | 技能 |\n| Defensive Strike | 防御打击 | 战斗技能 |\n| Quickshot | 快速射击 | 战斗技能 |\n| Feign death potion | 假死药水 | 道具 |\n| Fire stones | 火石 | 道具 |\n| Tutorial gem | 教程宝石 | 道具 |\n| control your lust | 控制欲望 | 任务名 |\n| TP | TP | 原文未展开含义，保留 |\n| silver | 银币 | 货币 |\n| lockpicking | 开锁 | 技能 |\n| forging | 锻造 | 技能 |\n| lookout | 瞭望处 | 地点描述 |\n",
+  "blocks": [
+    {
+      "id": "0001",
+      "markdown": "This is the walkthrough for the game \"A Struggle With Sin\" by Chyos ([SubscribeStar](https://subscribestar.adult/chyos), [Patreon](https://www.patreon.com/Chyos)).",
+      "classes": []
+    },
+    {
+      "id": "0002",
+      "markdown": "A and C will be used as shorthand to represent Affection and Corruption respectfully.",
+      "classes": []
+    },
+    {
+      "id": "0003",
+      "markdown": "New content for the latest version will be highlighted in green.  \nCurrent supported version: 0.6.2.0.  \nHighlight a different version using the menu on the right.",
+      "classes": [
+        "green"
+      ]
+    },
+    {
+      "id": "0004",
+      "markdown": "This document uses cookies exclusively for the purpose of remembering which sections you have set to be \"hidden\". No cookies will be created on your computer until you use the hide feature. Further information [here](original-ui.md).",
+      "classes": [
+        "red"
+      ]
+    },
+    {
+      "id": "0005",
+      "markdown": "View the source code for this document by clicking [here](https://github.com/AloofTooth/ASWSWalkthrough/tree/main).",
+      "classes": [
+        "cyan"
+      ]
+    },
+    {
+      "id": "0006",
+      "markdown": "## General information:",
+      "classes": []
+    },
+    {
+      "id": "0007",
+      "markdown": "I know that it's tempting to use Save-Edits on the game.  \nBe aware that **changing game variables, switches or items might break the game** as many of them are connected. This will also lead to the skipping of scenes and dialogue.  \nI try to keep grind at a minimum as I hate this stuff as much as most of you do. So whenever you have to repeat an action I try to add in new dialogue or images so that there is always something new.  \nBesides for those of you who don't like playing the actual game you can use the cheat book which lets you skip all the leveling up.",
+      "classes": []
+    },
+    {
+      "id": "0008",
+      "markdown": "If you stumble into money problems look at the [Tips & tricks](02-tips.md) section.",
+      "classes": []
+    },
+    {
+      "id": "0009",
+      "markdown": "There is an option to increase the combat animation. See the options menu.",
+      "classes": []
+    },
+    {
+      "id": "0010",
+      "markdown": "You can change your character name by visiting the baron.",
+      "classes": []
+    },
+    {
+      "id": "0011",
+      "markdown": "## After the intro:",
+      "classes": []
+    },
+    {
+      "id": "0012",
+      "markdown": "- You can regen energy/health by sleeping in the hay at the village",
+      "classes": []
+    },
+    {
+      "id": "0013",
+      "markdown": "- You can pass time in the village and outside of it by pressing **T**",
+      "classes": []
+    },
+    {
+      "id": "0014",
+      "markdown": "- You can open the Relationship overview with **R**",
+      "classes": []
+    }
+  ]
+}

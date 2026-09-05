@@ -1,0 +1,113 @@
+{
+  "chapter": "wt-tips",
+  "title": "Tips & tricks",
+  "blocks": [
+    {
+      "id": "0001",
+      "markdown": "## Talent checks",
+      "classes": []
+    },
+    {
+      "id": "0002",
+      "markdown": "Talent checks are explained in more detail in the ingame tutorial.  \nGo to Inventory > Key items > Tutorial gem",
+      "classes": []
+    },
+    {
+      "id": "0003",
+      "markdown": "## Food",
+      "classes": []
+    },
+    {
+      "id": "0004",
+      "markdown": "If you keep food above 70 you get a regeneration effect which lets you heal faster.  \nIf it drops to 0 you will get a debuff in combat.",
+      "classes": []
+    },
+    {
+      "id": "0005",
+      "markdown": "## Rest",
+      "classes": []
+    },
+    {
+      "id": "0006",
+      "markdown": "If it drops low you will get a debuff in combat",
+      "classes": []
+    },
+    {
+      "id": "0007",
+      "markdown": "## Combat",
+      "classes": []
+    },
+    {
+      "id": "0008",
+      "markdown": "Once you paid John to upgrade your dagger make sure to switch to it in combat using the arrow keys (← →).  \nUse Quickshot when you got 20 TP.  \nIf in a harder battle try to keep the block buff from Defensive Strike up.",
+      "classes": []
+    },
+    {
+      "id": "0009",
+      "markdown": "If you want to lose a combat situation on purpose Talk to [Katherin](10-katherin.md) and she will give you a Feign death potion",
+      "classes": []
+    },
+    {
+      "id": "0010",
+      "markdown": "## Crafting",
+      "classes": []
+    },
+    {
+      "id": "0011",
+      "markdown": "There are items that indicate that they can be used for crafting.  \nThe crafting menu can be opened with **C** or via the menu.  \nYou will learn more recipes over time and some need a special location like the smithy or workbench to be built.",
+      "classes": []
+    },
+    {
+      "id": "0012",
+      "markdown": "When crafting armor or weapons you will increase your skill level. Depending on that you will unlock upgrade slots on your newly crafted gear.",
+      "classes": [
+        "new-0-5-7-0"
+      ]
+    },
+    {
+      "id": "0013",
+      "markdown": "## Hunting",
+      "classes": []
+    },
+    {
+      "id": "0014",
+      "markdown": "To increase your chances of succeeding in the hunting check increase your skill and try to get to the target without being seen.  \nIf you are spotted wait a moment then try again otherwise your chances are decreased.  \nAt a skill 3+ of hunting you will never miss a shot on an unaware rabbit and at 5+ you won't miss on a deer.",
+      "classes": []
+    },
+    {
+      "id": "0015",
+      "markdown": "## Money",
+      "classes": []
+    },
+    {
+      "id": "0016",
+      "markdown": "- After you completed [Lucius](14-lucius.md) quest line you can buy empty vials from him and sell potions to him for 20 silver each.",
+      "classes": []
+    },
+    {
+      "id": "0017",
+      "markdown": "- You can steal wood from the inn and sell it to [Lucius](14-lucius.md).",
+      "classes": []
+    },
+    {
+      "id": "0018",
+      "markdown": "- Killing orcs/bandits will often reward you with coin pouches which you can open in your inventory (20+ silver).",
+      "classes": []
+    },
+    {
+      "id": "0019",
+      "markdown": "- Skill at least 1 point into perception so that you are able to detect hidden items you can sell afterwards.",
+      "classes": []
+    },
+    {
+      "id": "0020",
+      "markdown": "- After [Corven's](20-corven.md) quest you can sell the fur you get from a rabbit, wolf, deer.",
+      "classes": []
+    },
+    {
+      "id": "0021",
+      "markdown": "- Once you finish [Tia's](09-tia.md) questline and take charge of the [Rumah village](42-rumah.md) they will collect resources for you which you can sell.",
+      "classes": []
+    }
+  ]
+}

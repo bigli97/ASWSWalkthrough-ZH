@@ -1,0 +1,47 @@
+# Ophilia
+
+Travelling merchant. At Arenfield every Thursday & Friday.
+
+1. Talk to her on the marketplace.
+
+2. Talk to her again in the evening in the tavern repeat this until she is willing to have sex with you.
+
+3. You now have the choice to fuck her while she is still drunk or wait and talk to her the next morning.
+
+4. The next day talk to her either at her cart or in the tavern. Depending on your choice you she will now either start a love relationship with you or will turn more and more into a whore (this will be extended in the future).
+
+5. To finish the love route or to confront her enter her room at midnight (need [lockpicking](26-bianca.md)) and talk to her.
+
+6. Either route, after you had sex with her 2 times you can ask her to take off her clothes, she will now also be willing to give you a blowjob which you can use to increase her corruption.
+
+7. After you bought/tricked her to give you the [horse](11-kate.md) and you had sex with her she will (at her next visit) ask you to visit her in her room at night. (go there at midnight, don't drink with her first).
+
+8. You now have the option to progress her story, be warned that current animations won't be available after that (at least for now).
+
+9. The next day Ophilia is gone and a hidden 3 day timer is started. Pass 3/4 days then visit the tavern after the guests arrived and walk in front of the small stage. Ophilia should enter the tavern now.
+
+10. In your room upstairs you can now give her water every day, wait until the quest updates and says that you should visit the tavern.
+
+11. Like before walk to the spot near the stage and a new guest arrives.
+
+12. The next day talk to Ophilia in your room at noon.
+
+13. Wait until midnight and then talk to Ophilia in your room.
+
+14. You will now have to make a decision how your relationship with her continues, if you decide that you're not interested in her there won't be any sexual content. The other 2 options lead to either her becoming your girlfriend or you just keep it casual (friendship+).
+
+15. The next day talk to her again, you will now have the option to allow her to dance in the tavern, this can be reverted afterwards or also allowed afterwards (this will also unlock a new animation during sex) - If allowed she will start a dance at 7pm in the tavern.
+
+16. One day later she will have a serious talk about how she wants to get out of her current situation. (this will also unlock a new animation during sex).
+
+17. The next day she will visit Thomas to gain his trust as her new goal is to take over the inn at some point.
+
+18. During the Serving game with Kate you can call Ophilia to your table instead of Kate. By giving her a tip she will sit with you. Since she gets drunk easily 1 drink is enough to achieve that. - With Kate you can either call her to work and then run into her or you can just leave her be and at the end of the day the MC will take her to her room. (option to bring Rick there as well should you let him pay more than 3 times, this will lead to sharing) - When alone with her the MC can train anal with her. After she is fine with that she will also agree to have anal during the day and in case of sharing she is also willing to do it with both Rick & the MC.
+
+This is currently the end of this quest as for a further progress to the story around the cult has to be continued first.
+
+## NTR:
+
+19. However there is still an option for those who want to bring Ophilia in a bad situation... The next time she visits Thomas and you spy on them (lockpick the door) she will ask him to give her work. He will then allow her to manage his finances.
+
+20. If you then steal money from Thomas afterwards he will frame Ophilia for it. If you repeat it their relationship will further progress. After they had sex you can confront her by asking her to stop visiting Thomas in your bedroom in the evening. You are now given an option to break up with her or continue the relationship.

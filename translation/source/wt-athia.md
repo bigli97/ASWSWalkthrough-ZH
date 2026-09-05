@@ -1,0 +1,42 @@
+# Athia
+
+Goddess of Wisdom.
+
+1. To start her content complete [Gwen's](36-gwen.md) story up to the point of the ritual to summon her. Afterwards talk to Gwen in her cottage again about allying. This should then start the quest the next time that you leave the cottage.
+
+2. Visit the church in Arenfield during the day.
+
+3. Talk to Athia outside of the church. Depending on your choice with Gwen there are 2 paths going forward:
+    
+    1. Dominating Athia (if you chose to help Gwen) (from now short S).
+    2. Helping Athia (if you declined to help Gwen) (from now short H).
+
+4. Give her a day to cool off then talk to her again, she won't see reason. At midnight Harvald will visit her at the church, interact with him there.
+
+5. The next day check on them again, you now have the choice to interfere or stay out. If you don't act Harvald will make a move on her (interfering will also drastically increase her affection for you). If you interfered or not, the next time you talk to her there is now the option to invite her into your house.
+
+6. You now have to renovate your house up to the 1st floor (see [house renovation](03-house.md)).
+
+7. Now visit Roderic and ask him to renovate a room for Athia. After that is done talk to her to show her the new room.
+
+8. She is still running around in rags, time to change that by visiting Frisha. Ask her for a new dress and pay 10 gold.
+
+9. Return home and talk to Athia in her room. If on path 2H you now have to go to Gwen's house, check the bookshelf in the main room after Gwen has gone to bed. After that (or if you are on path 1S) you can now continue to raise your affection with Athia.
+
+10. If you haven't done it already ask Roderic about the bathtub and complete it (again house renovation).
+
+11. You now have to build affection with her, you can do that by giving her food (bread or other cooked meals) or if you built the kitchen eat with her at 4pm and praise her.
+
+12. After reaching 10 affection with Athia join her in the bathroom at 6pm.
+
+13. The next day talk to her again in her room.
+
+14. If on path 1S you will have to talk to her again in her room and resist, if on path 2H you will have to lockpick the door when she is playing with herself (right after the dialogue or after midnight) you need 15 affection.
+
+15. Have another bath with her.
+
+16. For 1s: Talk to her inside her bedroom the next day. For 2H: spy on her again when she is masturbating then go inside.
+
+17. After that all actions can be replayed by either taking a bath or talking to her in her room / spying on her at midnight.
+
+18. If on path 2H you can talk to her in the morning at 9am when she's on her bed reading. This will trigger a weekly timer after which she has found information (alternatively you can complete her route up to step 17 to instantly access this). The timer is only meant for people who don't want to do any sexual content with her. This will now start a new quest around the church. There isn't much to discover yet, it will be continued in the future.

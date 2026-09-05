@@ -1,0 +1,41 @@
+# Ayita
+
+Dancer at [Rumah](42-rumah.md).
+
+After you brought Palak the meat he asks for talk to him again. He will tell you that he's in love with Ayita and wants her to notice him. There are now 3 options to proceed (maybe save before):
+
+1. Send him on a dangerous quest: He will leave the village. Follow him outside and search for tracks near the stone where Raaisha attacked you.
+    
+    1. With your hunting skill you will find tracks that lead to a cave where you have to fight a bear. There is a way to skip the fight if you quickly interact with Palak's body and leave the cave.
+    2. When entering Rumah you will inform a guard that Palak is dead.
+    3. Now talk to Ayita and tell her what happened to Palak.
+    4. Afterwards talk to her again (see love route).
+
+2. He will ask you to show him how to talk to Ayita so he might learn from you. This will open up the netori love route. (see love route).
+
+3. NTR route: Give him a bottle of Cumwine. Talk to him again in the evening when he's sitting at the fire. Do this 3 times and Ayita will become corrupted enough for a small scene.  
+    This will lock up the other options. The only way to have more interaction with Ayita now is to declare Rumah women free for everyone.
+
+## Love route:
+
+Ayita is a material woman. Poor Palak didn't know. She's unable to develop real feelings (at least at the moment). Maybe the MC will be able to change that in the future. For now you can increase her affection by giving her Jewelry (brooch, ring, neclace) or wine-bottles to increase her affection. For each gift you will gain 1 favor from her.
+
+1. Once per evening you can now ask her for a dance. You should be at affection 2+.
+
+2. Dance with her again, you now have the option to take you cock out.
+
+3. The next day you dance with her you have the option to fuck her after you've taken out your cock (you need to give her 2 presents in a row before doing this).
+
+4. If her affection is below 11 she always wants another favor before she offers more. (You can only get her affection up to 10 with presents. To increase it further dance with her and then have sex, you need to favors for that so give her 2 presents in a row without dancing with her in between) After 11 you won't have to gift her anything.
+
+5. After you had sex with her 5 times you can now also ask her to have sex in the morning when she's sitting at the fire. There is now also a second position to which you can switch.
+
+6. 6. In the evening sit near the fire (interaction point), If Ayita is dancing naked, you can call her over to further interact with her. If you are on the chieftain route and have sharing disabled you now have the option to deepen your relationship with her by "Just spend some time together" - at the start this might cost you favor points with her (build them up by giving her presents). - Repeat this action and also make sure to increase her affection. If her affection is at 16+ the final stage of the event can be triggered and you can claim her as your wanita. Should you choose that, a claiming ceremony can be started the next day when you talk to her in the morning. After that it is now also possible to impregnate her. (no pregnancy stages at the moment).
+
+## NTR route:
+
+This one is quickly explained. Depending on your route (Dazan/Chieftain) you have the option to talk to Umin and make every women available in the village. On Dazan's route this is the standard. Now you can dance with Ayita at the fire and have sex with her.
+
+## Threesome with Hiba:
+
+When calling her over at the fire and Hiba is next to you you can send Ayita over to Hiba for a threesome scene. This requires Hiba to be your wanita or have sharing in Rumah enabled.

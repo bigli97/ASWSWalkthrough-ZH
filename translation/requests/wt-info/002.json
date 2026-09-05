@@ -1,0 +1,115 @@
+{
+  "chapter": "wt-info",
+  "batch": 2,
+  "output": "translation/drafts/wt-info/002.json",
+  "instruction": "逐块完整翻译，不摘要、不增删条件；保留编号、链接、图片和加粗。返回以原块 ID 为键、中文 Markdown 为值的 JSON。不可改写已有草稿或 docs。",
+  "glossary": "# 术语表\n\n第一阶段暂定译名，供人工修订。首次或关键位置保留英文，便于对照游戏界面与搜索。修改本表不会自动改写已有中文正文；已有译文请同步修订，后续批次读取本表。\n\n| 原文 | 中文 | 说明 |\n| --- | --- | --- |\n| A Struggle With Sin | A Struggle With Sin | 游戏标题暂保留英文 |\n| MC / Main Character | 主角 | |\n| Affection / A | 好感度 / A | 保留攻略数值缩写 |\n| Corruption / C | 堕落度 / C | C 同时可能是制作快捷键，按上下文区分 |\n| Lust | 欲望值 | |\n| Mira | 米拉 | 人名 |\n| Kate | 凯特 | 人名；不与 Katherin 混用 |\n| Katherin | 凯瑟琳 | 人名 |\n| Emily | 艾米莉 | 人名 |\n| Tia | 蒂娅 | 人名 |\n| Lucius | 卢修斯 | 人名 |\n| Corven | 科文 | 人名 |\n| Bianca | 比安卡 | 人名 |\n| John | 约翰 | 人名 |\n| Marcus | 马库斯 | 人名 |\n| Dave | 戴夫 | 人名 |\n| Rick | 瑞克 | 人名 |\n| Thomas | 托马斯 | 人名 |\n| Gwen | 格温 | 人名 |\n| Rumah village | 鲁玛村 | 地名 |\n| Dexterity | 灵巧 | 天赋 |\n| Perception | 感知 | 天赋 |\n| Hunting | 狩猎 | 天赋 |\n| Intelligence | 智力 | 天赋 |\n| Witchcraft | 巫术 | 天赋 |\n| Thievery | 盗窃 | 天赋 |\n| reading | 阅读 | 技能 |\n| Defensive Strike | 防御打击 | 战斗技能 |\n| Quickshot | 快速射击 | 战斗技能 |\n| Feign death potion | 假死药水 | 道具 |\n| Fire stones | 火石 | 道具 |\n| Tutorial gem | 教程宝石 | 道具 |\n| control your lust | 控制欲望 | 任务名 |\n| TP | TP | 原文未展开含义，保留 |\n| silver | 银币 | 货币 |\n| lockpicking | 开锁 | 技能 |\n| forging | 锻造 | 技能 |\n| lookout | 瞭望处 | 地点描述 |\n",
+  "blocks": [
+    {
+      "id": "0015",
+      "markdown": "- Items **I**, Powers **P**, Equip **E**, Quest Journal **J**",
+      "classes": []
+    },
+    {
+      "id": "0016",
+      "markdown": "- You can add a description to your save file if you press **R** on the game map",
+      "classes": []
+    },
+    {
+      "id": "0017",
+      "markdown": "Talents you at minimum need to complete the current story:",
+      "classes": [
+        "yellow"
+      ]
+    },
+    {
+      "id": "0018",
+      "markdown": "- Dexterity: **2**",
+      "classes": [
+        "yellow"
+      ]
+    },
+    {
+      "id": "0019",
+      "markdown": "- Perception: **1**",
+      "classes": [
+        "yellow"
+      ]
+    },
+    {
+      "id": "0020",
+      "markdown": "- Hunting: **5** (+1 from [Corven](20-corven.md)) = **6**",
+      "classes": [
+        "yellow"
+      ]
+    },
+    {
+      "id": "0021",
+      "markdown": "- Intelligence: **2** (+2 from [Mira](06-mira.md)'s quest) = **4**",
+      "classes": [
+        "yellow"
+      ]
+    },
+    {
+      "id": "0022",
+      "markdown": "- Witchcraft: **1** (+1 from quest) = **2**",
+      "classes": [
+        "yellow"
+      ]
+    },
+    {
+      "id": "0023",
+      "markdown": "- Thievery: **5**",
+      "classes": [
+        "yellow"
+      ]
+    },
+    {
+      "id": "0024",
+      "markdown": "Quests you should do first to enable all options:",
+      "classes": [
+        "cyan"
+      ]
+    },
+    {
+      "id": "0025",
+      "markdown": "- [Mira](06-mira.md) up until reading 2",
+      "classes": [
+        "cyan"
+      ]
+    },
+    {
+      "id": "0026",
+      "markdown": "- [Lucius](14-lucius.md) \"control your lust\" (requires reading)",
+      "classes": [
+        "cyan"
+      ]
+    },
+    {
+      "id": "0027",
+      "markdown": "- [Bianca](26-bianca.md) to learn lockpicking",
+      "classes": [
+        "cyan"
+      ]
+    },
+    {
+      "id": "0028",
+      "markdown": "- [John](21-john.md) to learn forging",
+      "classes": [
+        "cyan"
+      ]
+    },
+    {
+      "id": "0029",
+      "markdown": "**To support the game's development and for update news visit Chyos' [SubscribeStar](https://subscribestar.adult/chyos) or [Patreon](https://www.patreon.com/Chyos).**",
+      "classes": []
+    },
+    {
+      "id": "0030",
+      "markdown": "*Walkthrough by Chyos; stylized by [Aloof Tooth](https://f95zone.to/members/aloof_tooth.4676849/).*",
+      "classes": [
+        "small"
+      ]
+    }
+  ]
+}

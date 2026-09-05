@@ -1,0 +1,25 @@
+# Bridget
+
+Priestess. Daughter of [Agatha](40-agatha.md). Unlocked as part of [The Monastery](08-monastery.md).
+
+1. Visit her with food from Gabriel after she got her new dress in the evening.
+
+2. When she asks you to close your eyes do so if her affection is below 1, otherwise keep them open (The MC will tell you if it was a good idea).
+
+3. The next day she will be angry but accepts the MC seeing her.
+
+4. After that she will be conflicted if you have witnessed the dialogue between her and Agatha in Agatha's room she will ask you in to talk about it. (If you haven't seen it enter Agatha's room during the day then hide under the bed).
+
+5. Now you need to break into Agatha's room and steal her diary (in her bed) this will also cause Agatha's route to begin (see Agatha).
+
+6. After you have either asked Agatha to break up the engagement or not return to Bridget.
+
+7. She now tells you that she wants Adson to be her lover, at this point you can decide to forget about her (currently that will mean no further content for her) or continue the story, to trigger that choice sleep in the MC's bed inside the monastery.
+
+8. Visit her again, and then the next day as well, she will ask you to deliver a letter to Adson. Instead you will go into the scriptorium and forge a letter yourself at the table in the top right of it, afterwards find a signet to seal the letter in the scriptorium at one of the desks where the books are transcribed (2nd from the left table in the bottom line).
+
+9. Be aware that the next step will take her virginity, should you want the ritual to workout and Bridget is the last woman of the 3 priestesses who still has her virginity then wait with this step until after the ritual.
+
+10. With the letter return to Bridget, she will now be willing to go with your initial plan, to also trigger the BJ scene with her you have to cum in her mouth once (pull out when cumming).
+
+11. You will at some point impregnate her, currently this won't lead to a big belly or childbirth but will at some point when I continue her story.

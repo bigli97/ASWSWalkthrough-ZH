@@ -1,0 +1,54 @@
+site_name: A Struggle With Sin 中文攻略
+site_description: 按任务条件与行动步骤查阅的本地中文攻略
+site_author: 原攻略 Chyos · 原站 Aloof Tooth
+site_url: https://bigli97.github.io/ASWSWalkthrough-ZH/
+use_directory_urls: false
+docs_dir: .build/docs
+site_dir: dist/site
+theme:
+  name: material
+  language: zh
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+plugins:
+  - search:
+      lang: zh
+      separator: '[\s\u200b，。；：！？、（）()【】\[\]“”‘’<>/\-]+'
+      jieba_dict_user: .build/jieba-user.txt
+markdown_extensions:
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - sane_lists
+hooks:
+  - scripts/hooks.py
+extra_css:
+  - assets/site.css
+validation:
+  links:
+    not_found: warn
+    anchors: warn

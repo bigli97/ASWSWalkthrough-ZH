@@ -1,0 +1,29 @@
+# Rose
+
+Barmaid at the Golden Goose in Kirlic.
+
+1. After you've gotten to know her you can increase her affection for you by giving her tips when she serves you at the table. Increase her affection to 5 to be able to continue.
+
+2. You need to progress the MC's story up to the point where you escaped the assassin's to continue further.
+
+3. Now you can ask Rose to sit with you at your table or visit her in her room to further improve your relationship with her up to 10, then visit her in her room again.
+
+4. After she told you about her concerns for the inventor, go and seek out Renold in the sewers. He will tell you about Rogues selling equipment in the sewers.
+
+5. Find Kim and some Rogues in the SE corner of the sewers and defeat the rogues (you can bring your companions for that fight).
+
+6. Back at the inn visit Rose and tell her about what you found out.
+
+7. The next day go to your room and talk to Kim.
+
+8. Back to Rose, she will be relieved and tell you that she is still uncertain about your relationship with her.
+
+9. Now you need to take her out on a date, back in the city go to the NE and interact with the marker near the wall, that will lead to the MC wanting to talk to Kim again.
+
+10. Find Kim SW near the tent, that will allow you to return to Rose in the evening and then take her to the wall on a date.
+
+11. Afterwards there are 3 variations of the scene with her, you can raise her corruption up to 20 which will lead to different dialogue, also raising affection up to 20 will change some dialogue when talking to her.
+
+## NTR
+
+1. By sitting at the table and letting the nobleman have his way with Rose at 9pm, this will eventually lead to them having sex.

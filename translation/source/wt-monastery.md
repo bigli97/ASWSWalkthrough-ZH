@@ -1,0 +1,70 @@
+# The Monastery
+
+The monastery is unlocked after completing [The Church](07-church.md).
+
+You can find [Mira](06-mira.md), [Bridget](39-bridget.md), [Heather](41-heather.md), [Agatha](40-agatha.md), and Syfa here.
+
+1. After completing the events inside the sanctum and completing Mira's relationship quest (You can also decide not to have a relationship with her at all) a wagon will arrive at the church, visit it during the day.
+
+2. After arriving at the monastery you will have a decision to make if you want to destroy the seal inside the MC's room, doing so will put you at a choice to side with Syfa. If you decide to do that you will now work against the church (dark path) you will also be able to corrupt the priestesses along the way.
+
+3. The next day visit the abbot inside the church and talk about the murder, also if not on Syfa's path talk about demons with him. And ask him about the murder.
+
+4. From here on you have multiple people to talk to, take a look at the questlog and talk to Adson first, let him show you the victim.
+
+5. When inspecting the body take a look at both hands, the wounds on his chest and shoulder.
+
+6. Talk to Matthias (most of the day on the fields), Gabriel (inside the kitchen or on the field) and Antonius (inside the scriptorium or infront of it). Also try to talk to Jorge while he is teaching the women during the day (scriptorium) this will trigger the scene that they get new clothes.
+
+7. Antonius will have an idea on how to open Bernard's hand. For that you need Silverroot (find it on the graveyard of the monastery), a lobe (in the kitchen) - then go outside and get water from the well. After that open the craft menu and craft the Anticonvulsant Poultice.
+
+8. In the conversation with William (abbot) ask about Bernard's tattoo, he will give you the key to Bernard's room (Agatha is sleeping in it). Visit Agatha's room during the day, this will cause a hide scene to happen. Hide under the bed and witness the dialogue between Agatha and Bridget.
+
+9. Inspect the book in Agatha's room on the altar.
+
+10. With the key from Agatha's room now go inside Jorge's room (monks dormitory on the very left) inspect the book in it, it is the ledger you're searching.
+
+11. Enter the room where Bernard's body is kept, inspect his closed hand, this will trigger the Anticonvulsant Poultice that you have prepared earlier.
+
+12. Now wait a day and return to Bernard's body. You can now open his hand.
+
+13. In it you find the number 12, now open the ledger and look up that page.
+
+14. Return to Agatha's room and walk around until the MC finds something underneath a stone, a letter from Bernard.
+
+15. With the letter now talk to Gabriel, he will tell you to look inside your own room for a secret stash from Matthias.
+
+16. Check inside your room underneath the bed to find a letter and money which you can stash. You could now accuse Matthias this is 1 outcome of the quest.
+
+17. Talk again to Antonius about the murder, you can now talk to Aidalin who has found the murder weapon in his room (which was Antonius room efore) - The next step would be to accuse Antonius, but if you are not on the Syfa path that isn't possible by now. More later, If you accuse him you can then also decide whether he is guilty or not.
+
+18. You must accuse someone or tell William that the murderer has run away (only possible if you progressed Heather's story) to continue with the main story.
+    
+    **Church Path:**
+    
+    1. Should you have not sided with Syfa the dialogue with William about demons will start a new quest to weaken Syfa. Talk about it with Antonius, he will ask you to find a book in the scriptorium. You can find that book in the bottomline of the scriptorium.
+    2. Talk to Antonius again, you will now have to return to Arenfield and talk to the pater.
+    3. For the next step you must have progressed Gwen's story up to the point where you can enter her 2nd room. In it you will find the broken collar.
+    4. Visit the ruins map (where Arianna plays) and enter the old church, in it you will find the obsidian mirror.
+    5. With the collar go to John (smithy in Arenfield) - if you know how to forge you can repair the collar yourself. Use the anvil for it. You require a shadow-jewel for it. If you don't have one (you can normaly get them through chests inside the sanctum, if you don't have keys from earlier fights with Syfa your cat can give you those if the affection is high enough) enter the sanctum underneath the church, you will find one down near the entrance to the ritual chamber on the ground. Then reforge the collar.
+    6. Return to Antonius, that will conclude the preparations.
+    7. Depending on who you accuse someone will die in the end.
+        
+        - If you accuse Antonius then Matthias will die.
+        - If you accuse Matthias then William will die.
+        - You can also accuse Adson (will require you to fin Agatha's diary) in that case also Matthias will die.
+        
+        (Originally I had planned to make a path where Adson would die, but because of the implications that would have on Bridget's story I decided against it).  
+        There is no path where everybody survives. Something that might get changed in a future update. Probably the best solution is to accuse Antonius, but the choice is yours.
+    
+    **Syfa Path:**
+    
+    1. In case you sided with Syfa call for her after the sisters have gotten their new dresses. She will now give you fake plugs that you have to exchange with the real ones the priestesses are using.
+    2. Doing so is optional (if you want to corrupt them) but you can have sex with them by following their dialogues, more about that in the other section for each woman.
+    3. After you have taken the virginities of Bridget, Mira, Heather call Syfa again at your bed.
+
+19. Visit the cloister and then take a nap inside your bed, the next time you visit the cloister the final event will trigger.
+
+20. Depending on previous path you will now have a different outcome. On Syfa's path there is only 1 outcome, which is William dying and Ar'ganas taking over the monastery in the diguise of Jorge. On the other paths if you lose the fight against Syfa you will be knocked out and the demon takes over as well but without you knowing it. If you win the fight you can decide to banish or imprison Syfa. Banish means she is gone, imprison means you might get to have fun with her in the future and maybe even make her an ally. Should none of the 3 priestesses be a virgin at this point then the ritual will always fail! So if you don't want that don't take all their virginities. - If the ritual succeeds Mira will gain new powers which are not in the game yet but will come in her next update.
+
+21. There is a scene where Mira can spy on you and Heather. Be careful about triggering it unless you want Mira to begin the Aidalin route. If Mira has 5C+ she will be fine with you cheating on her (which means she will only do it herself if you allow her to), this will also trigger another dialogue with her in Emily's house at her bed. - But now about the scene: Spy on Mira when she is training at night in the monastery from the outside her room, then start masturbating, if you progressed Heather's story up to the point where she has given you a BJ, she will now (if she's not already sleeping) come outside and see you. Afterwards you can follow her to her room, doing so will cause Mira to follow later and spy on you. She will masturbate if she has 5C+.

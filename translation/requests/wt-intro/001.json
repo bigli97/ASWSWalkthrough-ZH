@@ -1,0 +1,91 @@
+{
+  "chapter": "wt-intro",
+  "batch": 1,
+  "output": "translation/drafts/wt-intro/001.json",
+  "instruction": "逐块完整翻译，不摘要、不增删条件；保留编号、链接、图片和加粗。返回以原块 ID 为键、中文 Markdown 为值的 JSON。不可改写已有草稿或 docs。",
+  "glossary": "# 术语表\n\n第一阶段暂定译名，供人工修订。首次或关键位置保留英文，便于对照游戏界面与搜索。修改本表不会自动改写已有中文正文；已有译文请同步修订，后续批次读取本表。\n\n| 原文 | 中文 | 说明 |\n| --- | --- | --- |\n| A Struggle With Sin | A Struggle With Sin | 游戏标题暂保留英文 |\n| MC / Main Character | 主角 | |\n| Affection / A | 好感度 / A | 保留攻略数值缩写 |\n| Corruption / C | 堕落度 / C | C 同时可能是制作快捷键，按上下文区分 |\n| Lust | 欲望值 | |\n| Mira | 米拉 | 人名 |\n| Kate | 凯特 | 人名；不与 Katherin 混用 |\n| Katherin | 凯瑟琳 | 人名 |\n| Emily | 艾米莉 | 人名 |\n| Tia | 蒂娅 | 人名 |\n| Lucius | 卢修斯 | 人名 |\n| Corven | 科文 | 人名 |\n| Bianca | 比安卡 | 人名 |\n| John | 约翰 | 人名 |\n| Marcus | 马库斯 | 人名 |\n| Dave | 戴夫 | 人名 |\n| Rick | 瑞克 | 人名 |\n| Thomas | 托马斯 | 人名 |\n| Gwen | 格温 | 人名 |\n| Rumah village | 鲁玛村 | 地名 |\n| Dexterity | 灵巧 | 天赋 |\n| Perception | 感知 | 天赋 |\n| Hunting | 狩猎 | 天赋 |\n| Intelligence | 智力 | 天赋 |\n| Witchcraft | 巫术 | 天赋 |\n| Thievery | 盗窃 | 天赋 |\n| reading | 阅读 | 技能 |\n| Defensive Strike | 防御打击 | 战斗技能 |\n| Quickshot | 快速射击 | 战斗技能 |\n| Feign death potion | 假死药水 | 道具 |\n| Fire stones | 火石 | 道具 |\n| Tutorial gem | 教程宝石 | 道具 |\n| control your lust | 控制欲望 | 任务名 |\n| TP | TP | 原文未展开含义，保留 |\n| silver | 银币 | 货币 |\n| lockpicking | 开锁 | 技能 |\n| forging | 锻造 | 技能 |\n| lookout | 瞭望处 | 地点描述 |\n",
+  "blocks": [
+    {
+      "id": "0001",
+      "markdown": "1. Pick up your bow from the wall.",
+      "classes": []
+    },
+    {
+      "id": "0002",
+      "markdown": "2. Walk across the river and watch the guard captain train with one of the soldiers. You learn Defensive strike.",
+      "classes": []
+    },
+    {
+      "id": "0003",
+      "markdown": "3. Walk inside the Inn and talk to the Innkeeper to get something to drink.",
+      "classes": []
+    },
+    {
+      "id": "0004",
+      "markdown": "**Optional: Kate asks you to find her ring.**",
+      "classes": []
+    },
+    {
+      "id": "0005",
+      "markdown": "![intro1.jpg](assets/images/intro1.jpg)\n\n- If you keep it for yourself: +1 corruption.\n- Otherwise: +1 Affection from Kate.",
+      "classes": [
+        "inset"
+      ]
+    },
+    {
+      "id": "0006",
+      "markdown": "4. Talk to Marcus and Mira after that follow Marcus inside the hut. You get to choose if you want to interrupt or stay hidden.",
+      "classes": []
+    },
+    {
+      "id": "0007",
+      "markdown": "5. After leaving Dave will show up to give you a beating. Counter him by using the Defensive strike. +1 Affection Mira.",
+      "classes": []
+    },
+    {
+      "id": "0008",
+      "markdown": "6. Walk north into the forest and walk up to the lookout. First encounter with a deer which you will always fail because you are drunk.",
+      "classes": []
+    },
+    {
+      "id": "0009",
+      "markdown": "7. Walk home across the bridge and choose whatever you like.",
+      "classes": []
+    },
+    {
+      "id": "0010",
+      "markdown": "8. Walk first to your hut (left of the inn) then to Emily's house (north of it) then to the mayor's house (cross the river to the NE).",
+      "classes": []
+    },
+    {
+      "id": "0011",
+      "markdown": "9. Talk to Rick inside the inn and afterwards to Thomas the innkeeper.",
+      "classes": []
+    },
+    {
+      "id": "0012",
+      "markdown": "10. ![intro2.jpg](assets/images/intro2.jpg)\n    \n    Leave the village to the north into the forest to find the hidden path.",
+      "classes": []
+    },
+    {
+      "id": "0013",
+      "markdown": "11. Take the path to the valley to the left.",
+      "classes": []
+    },
+    {
+      "id": "0014",
+      "markdown": "12. ![intro3.jpg](assets/images/intro3.jpg)\n    \n    Inside the hut pick up the silver and use the Fire stones to light the candle.",
+      "classes": []
+    },
+    {
+      "id": "0015",
+      "markdown": "13. Pick up 4 books from the bookshelve (until the MC tells you he has enough) and leave the hut.",
+      "classes": []
+    },
+    {
+      "id": "0016",
+      "markdown": "14. In the encounter with the witch pick whatever you like. If you chose to fuck her this will count to her corruption value (see Gwen).",
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "chapters": 53,
+  "samples": [
+    {
+      "chapter": "wt-info",
+      "blocks": 30,
+      "images": 0,
+      "list_items": 15
+    },
+    {
+      "chapter": "wt-tips",
+      "blocks": 21,
+      "images": 0,
+      "list_items": 6
+    },
+    {
+      "chapter": "wt-intro",
+      "blocks": 16,
+      "images": 3,
+      "list_items": 16
+    }
+  ],
+  "site_links_checked": 4444
+}

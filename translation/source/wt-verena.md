@@ -1,0 +1,62 @@
+# Verena
+
+Mother to [Arianna](16-arianna.md) and Rick. Wife to Roderic.
+
+1. (NTR) If you get caught by her inside her house upstairs or at a late hour of the day she will talk about that with her husband at 2am (Only if Roderic isn't in the cellar).  
+    You can spy on them from their bedroom door or from the partition wall inside their room.  
+    If you exchange the wine-bottle inside Roderic's study and give him sleep-wine he won't have sex with her.
+
+2. If you are at a later stage of Arianna's quest and it is one of the days where Roderic isn't going to bed with Verena (Tuesday, Thursday or Sunday), Wait until she goes to bed then sneak into her room and uncover her.
+
+3. If your dexterity skill is at 2 you can remove all her clothes.
+
+4. Cover and uncover her again. If the MC's own corruption is higher than 70 and lust is above 20 he will go further.
+
+5. After completing Arianna's quest up to the step where you free her from house arrest talk to Roderic in his room.
+
+6. Talk to him about Arianna, he will then ask you to visit the family at dinner.
+
+7. After the dinner event Verena will now watch every time you fuck Arianna alone in her room. This will increase her affection.
+
+8. Talk to Roderic in his study again and talk about Verena.
+
+9. The MC now comes up with the idea of catching a mouse. To do that visit Corven at his camp. If your hunting skill is 5+ he will teach you how to make traps. Open the craft menu to build one. Yarn can be bought at the shop.
+
+10. Look around the forest and lay out traps at the indicated spots (moving circle spots) - They will only show if you have a trap in your inventory.
+
+11. After placing it check on it in the coming days. There is a chance to either catch a rabbit or rat with it.
+
+12. Once you got the rat go into Verena's bedroom and place it at the marked location.
+
+13. Spy on Verena at night when she is in her room.
+
+14. Talk to her in the kitchen, she asks for vegetables. Each time you give her some it will increase her affection. Bring her carrots (have 2 in your inventory) then when it comes up give her a second (You need affection 3+ for that).
+
+15. At night wait until she goes to bed (2am) then spy at her door.
+
+16. Talk to Roderic in his workshop, after that place the toy in Verena's bedroom.
+
+17. Talk to Verena when she's in her bedroom. Afterwards spy at her door again when she goes to bed.
+
+18. Talk to Roderic again in his Workshop. Now you have a choice to make: Take Verena for yourself or share her with Roderic.  
+    This choice will have impact on further character development.
+
+19. Depending on your choice you now have to tamper with Roderic's wine or not.
+
+20. Talk to Verena in the kitchen or livingroom.
+
+21. At 10pm wait outside the workshop until Verena walks in then interact with the door.
+
+22. Depending on your choices visit Verena in her bedroom at night (If you told her that you're not interested this step is skipped).
+
+23. Visit Roderic in his study and talk about Verena.
+
+24. If you have chosen to go for the Roderic route he will now visit Verena's bedroom again from time to time to have fun with his wife. You can prevent that and also prevent him from taking part in the event in the workshop by interacting with his wine again (Only possible again after the last dialogue about Verena).
+
+25. If you have increased Verena's corruption to 5+ sleep with her inside her bed. The next morning she has a surprise for you. This will also start some reactions from Rick & Claire and also during dinner in her house.
+
+26. If you have already had the scene with Claire & Verena in the ally Verena will now be seen in her new clothes. When you further increase Verena's corruption to 10 there will now be an option to let Verena join in.
+
+27. There is a threesome scene with Verena & Arianna, for details check [Arianna's](16-arianna.md) section of the walk-through.
+
+28. After the threesome scene have sex with Verena alone in the evening. Afterwards she will talk about pregnancy, if you decide for it it will now be possible to impregnate Verena (currently no further pregnancy stages).

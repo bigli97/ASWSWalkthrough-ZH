@@ -1,0 +1,101 @@
+{
+  "chapter": "wt-tips",
+  "batch": 1,
+  "output": "translation/drafts/wt-tips/001.json",
+  "instruction": "逐块完整翻译，不摘要、不增删条件；保留编号、链接、图片和加粗。返回以原块 ID 为键、中文 Markdown 为值的 JSON。不可改写已有草稿或 docs。",
+  "glossary": "# 术语表\n\n第一阶段暂定译名，供人工修订。首次或关键位置保留英文，便于对照游戏界面与搜索。修改本表不会自动改写已有中文正文；已有译文请同步修订，后续批次读取本表。\n\n| 原文 | 中文 | 说明 |\n| --- | --- | --- |\n| A Struggle With Sin | A Struggle With Sin | 游戏标题暂保留英文 |\n| MC / Main Character | 主角 | |\n| Affection / A | 好感度 / A | 保留攻略数值缩写 |\n| Corruption / C | 堕落度 / C | C 同时可能是制作快捷键，按上下文区分 |\n| Lust | 欲望值 | |\n| Mira | 米拉 | 人名 |\n| Kate | 凯特 | 人名；不与 Katherin 混用 |\n| Katherin | 凯瑟琳 | 人名 |\n| Emily | 艾米莉 | 人名 |\n| Tia | 蒂娅 | 人名 |\n| Lucius | 卢修斯 | 人名 |\n| Corven | 科文 | 人名 |\n| Bianca | 比安卡 | 人名 |\n| John | 约翰 | 人名 |\n| Marcus | 马库斯 | 人名 |\n| Dave | 戴夫 | 人名 |\n| Rick | 瑞克 | 人名 |\n| Thomas | 托马斯 | 人名 |\n| Gwen | 格温 | 人名 |\n| Rumah village | 鲁玛村 | 地名 |\n| Dexterity | 灵巧 | 天赋 |\n| Perception | 感知 | 天赋 |\n| Hunting | 狩猎 | 天赋 |\n| Intelligence | 智力 | 天赋 |\n| Witchcraft | 巫术 | 天赋 |\n| Thievery | 盗窃 | 天赋 |\n| reading | 阅读 | 技能 |\n| Defensive Strike | 防御打击 | 战斗技能 |\n| Quickshot | 快速射击 | 战斗技能 |\n| Feign death potion | 假死药水 | 道具 |\n| Fire stones | 火石 | 道具 |\n| Tutorial gem | 教程宝石 | 道具 |\n| control your lust | 控制欲望 | 任务名 |\n| TP | TP | 原文未展开含义，保留 |\n| silver | 银币 | 货币 |\n| lockpicking | 开锁 | 技能 |\n| forging | 锻造 | 技能 |\n| lookout | 瞭望处 | 地点描述 |\n",
+  "blocks": [
+    {
+      "id": "0001",
+      "markdown": "## Talent checks",
+      "classes": []
+    },
+    {
+      "id": "0002",
+      "markdown": "Talent checks are explained in more detail in the ingame tutorial.  \nGo to Inventory > Key items > Tutorial gem",
+      "classes": []
+    },
+    {
+      "id": "0003",
+      "markdown": "## Food",
+      "classes": []
+    },
+    {
+      "id": "0004",
+      "markdown": "If you keep food above 70 you get a regeneration effect which lets you heal faster.  \nIf it drops to 0 you will get a debuff in combat.",
+      "classes": []
+    },
+    {
+      "id": "0005",
+      "markdown": "## Rest",
+      "classes": []
+    },
+    {
+      "id": "0006",
+      "markdown": "If it drops low you will get a debuff in combat",
+      "classes": []
+    },
+    {
+      "id": "0007",
+      "markdown": "## Combat",
+      "classes": []
+    },
+    {
+      "id": "0008",
+      "markdown": "Once you paid John to upgrade your dagger make sure to switch to it in combat using the arrow keys (← →).  \nUse Quickshot when you got 20 TP.  \nIf in a harder battle try to keep the block buff from Defensive Strike up.",
+      "classes": []
+    },
+    {
+      "id": "0009",
+      "markdown": "If you want to lose a combat situation on purpose Talk to [Katherin](10-katherin.md) and she will give you a Feign death potion",
+      "classes": []
+    },
+    {
+      "id": "0010",
+      "markdown": "## Crafting",
+      "classes": []
+    },
+    {
+      "id": "0011",
+      "markdown": "There are items that indicate that they can be used for crafting.  \nThe crafting menu can be opened with **C** or via the menu.  \nYou will learn more recipes over time and some need a special location like the smithy or workbench to be built.",
+      "classes": []
+    },
+    {
+      "id": "0012",
+      "markdown": "When crafting armor or weapons you will increase your skill level. Depending on that you will unlock upgrade slots on your newly crafted gear.",
+      "classes": [
+        "new-0-5-7-0"
+      ]
+    },
+    {
+      "id": "0013",
+      "markdown": "## Hunting",
+      "classes": []
+    },
+    {
+      "id": "0014",
+      "markdown": "To increase your chances of succeeding in the hunting check increase your skill and try to get to the target without being seen.  \nIf you are spotted wait a moment then try again otherwise your chances are decreased.  \nAt a skill 3+ of hunting you will never miss a shot on an unaware rabbit and at 5+ you won't miss on a deer.",
+      "classes": []
+    },
+    {
+      "id": "0015",
+      "markdown": "## Money",
+      "classes": []
+    },
+    {
+      "id": "0016",
+      "markdown": "- After you completed [Lucius](14-lucius.md) quest line you can buy empty vials from him and sell potions to him for 20 silver each.",
+      "classes": []
+    },
+    {
+      "id": "0017",
+      "markdown": "- You can steal wood from the inn and sell it to [Lucius](14-lucius.md).",
+      "classes": []
+    },
+    {
+      "id": "0018",
+      "markdown": "- Killing orcs/bandits will often reward you with coin pouches which you can open in your inventory (20+ silver).",
+      "classes": []
+    }
+  ]
+}

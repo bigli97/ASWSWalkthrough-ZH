@@ -1,0 +1,17 @@
+# Heather
+
+Priestess. Unlocked as part of [The Monastery](08-monastery.md).
+
+1. After Gabriel asks you to bring dinner to the priestesses do so in the evening, make sure you witnessed her getting the new dress before (see [Mira](06-mira.md)).
+
+2. Continue bringing her food, at some point you get the option to masturbate, if it comes do so and if Heather's affection is high enough she will be fine with it. If not try not doing it until her affection is high enough (it could be too low in case you angered her before).
+
+3. After a certain point you will have anal sex with her and depending on route you may also want to take her virginity. If you choose to do that, be aware that 1 priestess needs to have her virginity for the ritual to succeed.
+
+4. After taking her virginity she will write a letter to her mother in her room.
+
+5. If you read that letter and before have found the letter in Matthias room the MC will make a connection.
+
+6. You can talk about it with her afterwards during the evening (only if the MC isn't naked before her at that point).
+
+7. There is a small after the ritual dialogue with her, but nothing that has direct influence on her current scenes.

@@ -1,0 +1,10 @@
+{
+  "manual_edit_survives": [
+    "extract",
+    "assemble",
+    "build"
+  ],
+  "manual_edit_visible_in_site": true,
+  "resume_only_missing_batch": true,
+  "production_docs_untouched_by_simulation": true
+}

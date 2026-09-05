@@ -1,0 +1,21 @@
+# Sabrina
+
+[Gwen's](36-gwen.md) apprentice.
+
+1. After completing the 3rd Puzzle of Gwen's storyline talk to her in the evening (8pm+) while she's sitting on her bed.
+
+2. Do that every day (there are decisions to be made while doing it) until she tells you to come and visit her later.
+
+3. When she's sleeping uncover her to start the next conversation.
+
+4. After you had sex with her 3 times in her bed her story progresses.
+
+5. Afterwards you can trigger the scene again by talking to Gwen at the cauldron.
+
+6. In case NTR is on and you have chosen the futa route with Sabrina, should Gwen's corruption fall below 10 (it falls every day by 2) Gwen will have sex with Sabrina at 12pm.
+
+7. After the events with Gwen that lead to the transformation of Athia into a human body talk to Sabrina. After that visit her again at night in her bed. If she reaches 5 corruption you will see some changes in her dialogue and during the scene when she is standing in the back when Gwen has sex with you.
+
+8. After you've renovated your house and built a bed inside your house and allowed Athia to stay with you, and you've done the previous steps with Sabrina, she will come and visit you. Depending on route she will give you some insights on her situation with Gwen. From now on (if you didn't deny her) you can invite her to visit you at your house.
+
+9. Athia & Sabrina Winterhowl scene: If you invite Sabrina to your bed in December (RL or in-game) you can invite her to join you at Winterhowl. You will have to decorate the house for that and put a tree in the kitchen. Then when you interact with the tree in the afternoon/evening you can look outside the window and Sabrina will come to join you and Athia.

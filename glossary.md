@@ -39,7 +39,7 @@
 | Umin | 乌敏 | 人名 |
 | Kate | 凯特 | 人名 |
 | Katherin | 凯瑟琳 | 人名 |
-| Emily | 艾米莉 | 人名 |
+| Emily | 艾米丽 | 人名 |
 | Tia | 蒂娅 | 人名 |
 | Lucius | 卢修斯 | 人名 |
 | Corven | 科文 | 人名 |
@@ -104,6 +104,7 @@
 | Liandra | 莉安德拉 | 人名 |
 | Helena | 海伦娜 | 人名 |
 | Yasmine | 雅斯敏 | 人名 |
+| Ayita | 阿伊塔 | 人名 |
 | Rumah village | 鲁玛村 | 地名 |
 | Rumah | 鲁玛 | 地名 |
 | Kirlic | 基尔利克 | 地名 |

@@ -17,7 +17,7 @@
 使用右侧菜单，可以改为高亮显示其他版本的内容。
 
 <!-- source:0004 -->
-本攻略文档使用 Cookie 的唯一用途，是记住你设为“隐藏”的章节。在你使用隐藏功能之前，不会在你的电脑上创建任何 Cookie。更多信息见[这里](original-ui.md)。
+原站攻略使用 Cookie 的唯一用途，是记住你设为“隐藏”的章节。在你使用隐藏功能之前，不会在你的电脑上创建任何 Cookie；中文站不提供该功能。
 
 <!-- source:0005 -->
 点击[这里](https://github.com/AloofTooth/ASWSWalkthrough/tree/main)，可以查看本攻略文档的源码。

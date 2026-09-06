@@ -21,22 +21,22 @@ TRANS = ROOT / 'translation'
 BUILD = ROOT / '.build' / 'docs'
 ACTIVE_TARGETS = {'wt-tia', 'wt-arianna', 'wt-emily', 'wt-lyvia', 'wt-ayita'}
 TITLES = {'wt-info': '基本信息', 'wt-tips': '技巧与窍门', 'wt-intro': '序章',
-          'wt-house': '房屋翻修', 'wt-mc': '主角', 'wt-mira': '米拉',
-          'wt-carmen': '卡门', 'wt-lucius': '卢修斯', 'wt-verena': '维蕾娜',
-          'wt-rose': '罗斯', 'wt-corven': '科文', 'wt-john': '约翰',
-          'wt-tia': '蒂娅', 'wt-arianna': '阿丽安娜', 'wt-emily': '艾米莉',
-          'wt-lyvia': '莉维娅', 'wt-melissa': '梅丽莎', 'wt-imawyn': '伊玛温', 'wt-maui': '毛伊',
-          'wt-church': '教堂', 'wt-monastery': '修道院', 'wt-katherin': '凯瑟琳',
-          'wt-kate': '凯特', 'wt-claire': '克莱尔', 'wt-frisha': '弗莉莎',
-          'wt-bianca': '比安卡', 'wt-gavina': '加维娜', 'wt-ugotha': '乌戈莎',
+          'wt-house': '房屋翻修', 'wt-mc': '主角', 'wt-mira': '米拉（妹妹）',
+          'wt-carmen': '卡门', 'wt-lucius': '卢修斯（商店老板）', 'wt-verena': '维蕾娜（木匠老婆）',
+          'wt-rose': '罗斯', 'wt-corven': '科文（猎人）', 'wt-john': '约翰（铁匠）',
+          'wt-tia': '蒂娅（砍木头的）', 'wt-arianna': '阿丽安娜（木匠女儿）', 'wt-emily': '艾米丽（你家上面）',
+          'wt-lyvia': '莉维娅（民兵队长）', 'wt-melissa': '梅丽莎（铁匠女儿）', 'wt-imawyn': '伊玛温（强盗首领）', 'wt-maui': '毛伊（兽人）',
+          'wt-church': '教堂', 'wt-monastery': '修道院', 'wt-katherin': '凯瑟琳（蒂娅老母）',
+          'wt-kate': '凯特（酒馆服务员）', 'wt-claire': '克莱尔（凯特老母）', 'wt-frisha': '弗莉莎（裁缝）',
+          'wt-bianca': '比安卡（偷窃）', 'wt-gavina': '加维娜', 'wt-ugotha': '乌戈莎',
           'wt-snikka': '斯尼卡', 'wt-natasha': '娜塔莎', 'wt-ophilia': '奥菲莉娅',
-          'wt-anya': '安雅', 'wt-penny': '佩妮', 'wt-lilly': '莉莉',
-          'wt-elisabeth': '伊丽莎白', 'wt-gwen': '格温', 'wt-sabrina': '萨布丽娜',
+          'wt-anya': '安雅', 'wt-penny': '佩妮（农场）', 'wt-lilly': '莉莉（庄园女仆）',
+          'wt-elisabeth': '伊丽莎白（庄园老婆）', 'wt-gwen': '格温（女巫）', 'wt-sabrina': '萨布丽娜（格温徒弟）',
           'wt-athia': '阿西娅', 'wt-bridget': '布丽姬特', 'wt-agatha': '阿加莎',
-          'wt-heather': '希瑟', 'wt-rumah': '鲁玛村', 'wt-raaisha': '拉伊莎',
-          'wt-hiba': '希芭', 'wt-nyra': '妮拉', 'wt-ayita': 'Ayita', 'wt-umah': '乌玛',
-          'wt-darkholt': '重建暗林', 'wt-mansion': '市长宅邸', 'wt-julia': '朱莉娅',
-          'wt-liandra': '莉安德拉', 'wt-helena': '海伦娜', 'wt-yasmine': '雅斯敏'}
+          'wt-heather': '希瑟', 'wt-rumah': '鲁玛村', 'wt-raaisha': '拉伊莎（鲁玛猎人）',
+          'wt-hiba': '希芭（鲁玛村民）', 'wt-nyra': '妮拉（酋长老婆）', 'wt-ayita': '阿伊塔（鲁玛跳舞的）', 'wt-umah': '乌玛（酋长女儿）',
+          'wt-darkholt': '重建暗林', 'wt-mansion': '市长宅邸', 'wt-julia': '朱莉娅（市长女仆）',
+          'wt-liandra': '莉安德拉（男爵夫人）', 'wt-helena': '海伦娜', 'wt-yasmine': '雅斯敏'}
 PLACES = {'wt-house', 'wt-church', 'wt-monastery', 'wt-rumah', 'wt-darkholt', 'wt-mansion'}
 
 
@@ -300,6 +300,19 @@ CSS = '''
 .md-typeset li { margin-bottom: .65em; }
 .md-typeset blockquote { border-color: #2780d8; color: #526780; background: #f3f7fc; padding: .7em 1em; }
 .md-typeset a { text-underline-offset: .2em; }
+.homepage-chapter-grid ul { column-width: 10rem; column-gap: .8rem; margin-top: 0; }
+.homepage-chapter-grid li { break-inside: avoid; }
+.quick-start { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: .8rem; margin: 1.2rem 0 2rem; }
+.quick-start-card { border: 1px solid #dce6f2; border-radius: 8px; display: block; min-height: 5.4rem; padding: .85rem 1rem; }
+.quick-start-card:hover { background: #f3f7fc; }
+.quick-start-card strong, .quick-start-card span { display: block; }
+.quick-start-card span { color: #526780; font-size: .85em; margin-top: .35rem; }
+.chapter-overview { background: #f3f7fc; border-left: .2rem solid #2780d8; margin: 1.2rem 0; padding: .75rem 1rem; }
+.chapter-overview p { margin: .25rem 0; }
+[data-md-color-scheme="slate"] .md-typeset blockquote { border-color: #5b8fd8; color: #c9d5e7; background: #263142; }
+[data-md-color-scheme="slate"] .quick-start-card { border-color: #3d4d63; }
+[data-md-color-scheme="slate"] .quick-start-card:hover, [data-md-color-scheme="slate"] .chapter-overview { background: #263142; }
+[data-md-color-scheme="slate"] .quick-start-card span { color: #c9d5e7; }
 @media (max-width: 700px) { .md-typeset { font-size: .8rem; } }
 '''
 
@@ -310,6 +323,29 @@ def stage():
         fcntl.flock(lock, fcntl.LOCK_EX)
         _stage()
 
+
+def chapter_overview(chapter, chapters, titles):
+    current = next(index for index, item in enumerate(chapters) if item['id'] == chapter['id'])
+    path = ROOT / 'docs' / chapter['file']
+    text = path.read_text(encoding='utf-8')
+    related_files = []
+    for file_name in re.findall(r'\[[^\]]+\]\((\d{2}-[^)]+\.md)\)', text):
+        if file_name in titles and file_name not in related_files:
+            related_files.append(file_name)
+    related = '、'.join('[%s](%s)' % (titles[file_name], file_name) for file_name in related_files[:5])
+    links = []
+    if current > 0:
+        previous = chapters[current - 1]
+        links.append('[上一章：%s](%s)' % (titles[previous['file']], previous['file']))
+    links.append('[返回全部章节](catalog.md)')
+    if current + 1 < len(chapters):
+        following = chapters[current + 1]
+        links.append('[下一章：%s](%s)' % (titles[following['file']], following['file']))
+    overview = '<div class="chapter-overview" markdown>\n\n**章节分类：%s**\n\n' % chapter['category']
+    if related:
+        overview += '**文中关联：%s**\n\n' % related
+    overview += ' · '.join(links) + '\n\n</div>\n\n'
+    return re.sub(r'^(# .+\n\n> 本章中文译文已通过人工审核。[^\n]*\n\n)', r'\1' + overview, text, count=1)
 
 def _stage():
     data = manifest()
@@ -324,25 +360,37 @@ def _stage():
     for path in BUILD.glob('*.md'):
         path.unlink()
     shutil.copytree(ROOT / 'docs', BUILD, dirs_exist_ok=True)
+    titles = {}
+    for chapter in data['chapters']:
+        path = ROOT / 'docs' / chapter['file']
+        if path.exists():
+            match = re.search(r'^# (.+)$', path.read_text(encoding='utf-8'), re.M)
+            if match is not None:
+                titles[chapter['file']] = match.group(1)
     for path in (ROOT / 'docs').glob('*.md'):
         # 去掉构建用的块标记，防止注释将连续列表切成多个列表。
         text = re.sub(r'<!-- source:\d+ -->\n', '', path.read_text())
+        chapter = next((item for item in data['chapters'] if item['file'] == path.name), None)
+        if chapter is not None and path.name in titles:
+            text = chapter_overview(chapter, data['chapters'], titles)
+            text = re.sub(r'<!-- source:\d+ -->\n', '', text)
         write(BUILD / path.name, text)
     shutil.copytree(ROOT / 'page' / 'images', BUILD / 'assets' / 'images', dirs_exist_ok=True)
     write(BUILD / 'assets' / 'site.css', CSS)
     write(BUILD / 'glossary.md', '---\nsearch:\n  boost: 0.1\n---\n\n' + (ROOT / 'glossary.md').read_text())
-    write(BUILD / 'original-ui.md', '# 原站隐藏章节功能\n\n原站可通过标题栏的 hide 隐藏章节；被隐藏章节可在管理列表恢复，新版本可能自动恢复显示。Cookie 仅用于记录隐藏选择。中文站不启用此功能。\n')
-    rows = ['# 全部章节', '', '按原站入口排序。当前仅发布 3 章中文初译；其他章节提供本地英文原文，不表示已完成翻译。', '', '| 顺序 | 章节 | 分类 | 状态 |', '| --- | --- | --- | --- |']
+    rows = ['# 全部章节', '', '按原站入口排序。', '', '| 顺序 | 章节 | 分类 |', '| --- | --- | --- |']
     local_paths = {c['id']: c['file'].replace('.md', '.html') for c in data['chapters']}
-    local_paths['hidden-sections'] = 'original-ui.html'
     for c in data['chapters']:
         available = (ROOT / 'docs' / c['file']).exists()
         title = TITLES.get(c['id'], c['title'])
-        rows.append('| %02d | [%s](%s) | %s | %s |' % (c['order'], title, c['file'], c['category'], '中文初译' if available else '待翻译'))
+        rows.append('| %02d | [%s](%s) | %s |' % (c['order'], title, c['file'], c['category']))
         if not available:
             write(BUILD / c['file'], '---\nsearch:\n  exclude: true\n---\n\n# ' + c['title'] + '\n\n本章尚未翻译，未纳入第一阶段样例。\n\n[阅读本地英文原文](reference/' + c['id'] + '.html) · [返回全部章节](catalog.md)\n')
         raw = BeautifulSoup((ROOT / 'page' / 'pages' / (c['id'] + '.html')).read_text(), 'html.parser')
         for a in raw.select('[data-target]'):
+            if a['data-target'] not in local_paths:
+                a.unwrap()
+                continue
             a.name = 'a'
             a['href'] = '../' + local_paths[a['data-target']]
         for img in raw.select('img'):
@@ -352,7 +400,7 @@ def _stage():
             v.string = data['version']
         write(BUILD / 'reference' / (c['id'] + '.html'), '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + html.escape(c['title']) + '</title><style>body{max-width:900px;margin:30px auto;padding:0 20px;font:17px/1.8 system-ui}img{max-width:100%}a{color:#1769aa}</style><p><a href="../catalog.html">返回中文攻略目录</a> · 未翻译原文</p><h1>' + html.escape(c['title']) + '</h1>' + str(raw) + '</html>')
     write(BUILD / 'catalog.md', '\n'.join(rows) + '\n')
-    for name in ['index.md', 'catalog.md', 'original-ui.md']:
+    for name in ['index.md', 'catalog.md']:
         path = BUILD / name
         write(path, '---\nsearch:\n  exclude: true\n---\n\n' + path.read_text())
 
@@ -368,7 +416,7 @@ def navigation():
                     title += ' · 待译'
                 items.append({title: c['file']})
         nav.append({category: items})
-    nav += [{'术语表': 'glossary.md'}, {'原站界面说明': 'original-ui.md'}]
+    nav += [{'术语表': 'glossary.md'}]
     return nav
 
 
@@ -411,7 +459,32 @@ def sync_homepage():
     chapters = reviewed_chapters()
     content = ('当前版本 **%s**，已通过人工审核的中文章节共 **%d** 章。\n\n### 开始阅读\n\n' %
                (manifest()['version'], len(chapters)))
-    content += '\n\n'.join('- [%s](%s)' % chapter for chapter in chapters) + '\n'
+    content += ('#### 推荐起点\n\n'
+                '<div class="quick-start">\n'
+                '<a class="quick-start-card" href="01-info.html"><strong>基本信息</strong><span>了解版本、术语与阅读说明。</span></a>\n'
+                '<a class="quick-start-card" href="02-tips.html"><strong>技巧与窍门</strong><span>查看检定、饱食与休息等常用机制。</span></a>\n'
+                '<a class="quick-start-card" href="03-house.html"><strong>房屋翻修</strong><span>查看自住房翻修与设施建设步骤。</span></a>\n'
+                '<a class="quick-start-card" href="04-intro.html"><strong>序章</strong><span>从开局流程和可选任务开始。</span></a>\n'
+                '<a class="quick-start-card" href="05-mc.html"><strong>主角</strong><span>查看主角相关任务的推进条件。</span></a>\n'
+                '</div>\n\n'
+                '#### 我想找什么\n\n'
+                '[基础机制](02-tips.md) · [开局任务](04-intro.md) · [房屋建设](03-house.md) · [地点与建设](#places) · [人物攻略](#characters)\n\n')
+    content += '#### 按主题浏览\n\n'
+    reviewed_files = {file_name for unused, file_name in chapters}
+    for category in ['入门与玩法', '地区与建设', '人物']:
+        category_chapters = []
+        for chapter in manifest()['chapters']:
+            if chapter['category'] != category or chapter['file'] not in reviewed_files:
+                continue
+            path = ROOT / 'docs' / chapter['file']
+            title = re.search(r'^# (.+)$', path.read_text(encoding='utf-8'), re.M).group(1)
+            category_chapters.append((title, chapter['file']))
+        if not category_chapters:
+            continue
+        anchor = {'入门与玩法': 'gameplay', '地区与建设': 'places', '人物': 'characters'}[category]
+        content += '##### %s {#%s}\n\n<div class="homepage-chapter-grid" markdown>\n\n' % (category, anchor)
+        content += '\n\n'.join('- [%s](%s)' % chapter for chapter in category_chapters)
+        content += '\n\n</div>\n\n'
     sync_marked_section(ROOT / 'docs' / 'index.md', r'(<!-- homepage-reviewed:start -->\n)(.*?)(<!-- homepage-reviewed:end -->)',
                         content, '首页')
     print('首页已同步 %d 个已审核章节。' % len(chapters))

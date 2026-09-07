@@ -10,24 +10,23 @@ theme:
   language: zh
   font: false
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: 切换到深色模式
-
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
+    - scheme: slate
+      primary: black
+      accent: black
       toggle:
         icon: material/weather-sunny
         name: 切换到浅色模式
+
+    - scheme: default
+      primary: black
+      accent: black
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
   features:
     - navigation.top
     - navigation.footer
+    - toc.integrate
     - search.highlight
     - search.suggest
 plugins:
@@ -37,7 +36,7 @@ plugins:
       jieba_dict_user: .build/jieba-user.txt
 markdown_extensions:
   - toc:
-      permalink: true
+      permalink: false
   - attr_list
   - md_in_html
   - admonition

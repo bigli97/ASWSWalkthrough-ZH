@@ -275,12 +275,15 @@ def assemble():
         else:
             content = ['# ' + TITLES.get(c['id'], c['title']),
                        '> 本章为中文初译，待人工审核。原文版本：' + data['version'] + '。']
+            marked_versions = set()
             for b in blocks:
                 # 标记保留用于覆盖比对，不影响网页阅读与人工正文编辑。
                 content.append('<!-- source:%s -->\n%s' % (b['id'], translated[b['id']]))
                 versions = [x[4:].replace('-', '.') for x in b['classes'] if x.startswith('new-')]
-                if versions:
-                    content.append('> 原文版本标记：' + '、'.join(versions) + ' 新增。')
+                version_marker = '、'.join(versions)
+                if version_marker and version_marker not in marked_versions:
+                    content.append('> 原文版本标记：' + version_marker + ' 新增。')
+                    marked_versions.add(version_marker)
             if c['id'] == 'wt-info':
                 content.insert(2, '!!! note "原站界面说明"\n    下文关于绿色高亮、右侧菜单和 Cookie 的说明属于原站。本站保留这些原文信息；本站不提供隐藏章节功能。')
             destination.parent.mkdir(parents=True, exist_ok=True)
@@ -294,11 +297,11 @@ CSS = '''
 :root { --md-text-font: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
 .md-grid { max-width: 1440px; }
 .md-typeset { font-size: .82rem; line-height: 1.85; }
-.md-typeset h1 { color: #173c69; font-weight: 700; letter-spacing: -.02em; }
+.md-typeset h1 { color: inherit; font-weight: 700; letter-spacing: -.02em; }
 .md-typeset h2 { border-bottom: 1px solid #dce6f2; padding-bottom: .35em; font-weight: 650; }
 .md-typeset img { border-radius: 8px; border: 1px solid #dce6f2; max-height: 640px; }
 .md-typeset li { margin-bottom: .65em; }
-.md-typeset blockquote { border-color: #2780d8; color: #526780; background: #f3f7fc; padding: .7em 1em; }
+.md-typeset blockquote { border-color: #2780d8; color: #526780; background: #f3f7fc; font-size: .86em; line-height: 1.65; padding: .5em .85em; }
 .md-typeset a { text-underline-offset: .2em; }
 .homepage-chapter-grid ul { column-width: 10rem; column-gap: .8rem; margin-top: 0; }
 .homepage-chapter-grid li { break-inside: avoid; }
@@ -309,11 +312,35 @@ CSS = '''
 .quick-start-card span { color: #526780; font-size: .85em; margin-top: .35rem; }
 .chapter-overview { background: #f3f7fc; border-left: .2rem solid #2780d8; margin: 1.2rem 0; padding: .75rem 1rem; }
 .chapter-overview p { margin: .25rem 0; }
-[data-md-color-scheme="slate"] .md-typeset blockquote { border-color: #5b8fd8; color: #c9d5e7; background: #263142; }
-[data-md-color-scheme="slate"] .quick-start-card { border-color: #3d4d63; }
-[data-md-color-scheme="slate"] .quick-start-card:hover, [data-md-color-scheme="slate"] .chapter-overview { background: #263142; }
-[data-md-color-scheme="slate"] .quick-start-card span { color: #c9d5e7; }
-@media (max-width: 700px) { .md-typeset { font-size: .8rem; } }
+.guide-homepage-intro { margin: 5rem auto 3.5rem; max-width: 42rem; text-align: center; }
+.guide-homepage-intro h1 { font-size: 2.65rem; letter-spacing: -.04em; margin: .25rem 0 .65rem; }
+.guide-homepage-intro p { color: var(--md-default-fg-color--light); font-size: 1rem; }
+.guide-homepage-kicker { font-size: .72rem; font-weight: 700; letter-spacing: .16em; margin: 0; }
+.guide-homepage { margin: 0 auto 4rem; max-width: 58rem; }
+.guide-homepage-meta { color: var(--md-default-fg-color--light); font-size: .82rem; margin-bottom: 1rem; text-align: center; }
+.guide-feature-card, .guide-category-card { border: 1px solid var(--md-default-fg-color--lighter); border-radius: .75rem; color: inherit !important; display: block; transition: background-color .18s ease, border-color .18s ease, transform .18s ease; }
+.guide-feature-card { min-height: 11rem; padding: 1.6rem 1.8rem; }
+.guide-feature-card:hover, .guide-category-card:hover { background: var(--md-default-fg-color--lightest); border-color: var(--md-default-fg-color--light); transform: translateY(-2px); }
+.guide-card-label, .guide-card-title, .guide-card-copy, .guide-card-action { display: block; }
+.guide-card-label { color: var(--md-default-fg-color--light); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
+.guide-feature-card .guide-card-title { font-size: 1.55rem; margin-top: 2.2rem; }
+.guide-card-title { font-size: 1.12rem; font-weight: 700; }
+.guide-card-copy { color: var(--md-default-fg-color--light); margin-top: .55rem; }
+.guide-card-action { font-size: .82rem; font-weight: 700; margin-top: 1.5rem; }
+.guide-category-grid { display: grid; gap: .8rem; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: .8rem; }
+.guide-category-card { min-height: 12rem; padding: 1.35rem; }
+.guide-category-card .guide-card-title { margin-top: 3rem; }
+.guide-homepage-footer { margin-top: 1.8rem; text-align: center; }
+[data-md-color-scheme="slate"] .guide-feature-card, [data-md-color-scheme="slate"] .guide-category-card { background: #1d1d1f; border-color: #454548; }
+[data-md-color-scheme="slate"] .guide-feature-card:hover, [data-md-color-scheme="slate"] .guide-category-card:hover { background: #29292c; border-color: #77777b; }
+[data-md-color-scheme="slate"] { --md-typeset-a-color: #f1f1f1; --md-accent-fg-color: #ffffff; }
+[data-md-color-scheme="slate"] .md-typeset h2 { border-color: #3f3f42; }
+[data-md-color-scheme="slate"] .md-typeset img { border-color: #3f3f42; }
+[data-md-color-scheme="slate"] .md-typeset blockquote { border-color: #77777b; color: #d5d5d7; background: #29292c; }
+[data-md-color-scheme="slate"] .quick-start-card { border-color: #4a4a4e; }
+[data-md-color-scheme="slate"] .quick-start-card:hover, [data-md-color-scheme="slate"] .chapter-overview { background: #29292c; }
+[data-md-color-scheme="slate"] .quick-start-card span { color: #d5d5d7; }
+@media (max-width: 700px) { .md-typeset { font-size: .8rem; } .guide-homepage-intro { margin-top: 2.5rem; } .guide-homepage-intro h1 { font-size: 2.1rem; } .guide-category-grid { grid-template-columns: 1fr; } .guide-feature-card, .guide-category-card { min-height: auto; } .guide-category-card .guide-card-title { margin-top: 1.5rem; } }
 '''
 
 
@@ -402,7 +429,10 @@ def _stage():
     write(BUILD / 'catalog.md', '\n'.join(rows) + '\n')
     for name in ['index.md', 'catalog.md']:
         path = BUILD / name
-        write(path, '---\nsearch:\n  exclude: true\n---\n\n' + path.read_text())
+        metadata = '---\nsearch:\n  exclude: true\n'
+        if name == 'index.md':
+            metadata += 'hide:\n  - navigation\n'
+        write(path, metadata + '---\n\n' + path.read_text())
 
 
 def navigation():
@@ -457,34 +487,16 @@ def sync_readme():
 
 def sync_homepage():
     chapters = reviewed_chapters()
-    content = ('当前版本 **%s**，已通过人工审核的中文章节共 **%d** 章。\n\n### 开始阅读\n\n' %
-               (manifest()['version'], len(chapters)))
-    content += ('#### 推荐起点\n\n'
-                '<div class="quick-start">\n'
-                '<a class="quick-start-card" href="01-info.html"><strong>基本信息</strong><span>了解版本、术语与阅读说明。</span></a>\n'
-                '<a class="quick-start-card" href="02-tips.html"><strong>技巧与窍门</strong><span>查看检定、饱食与休息等常用机制。</span></a>\n'
-                '<a class="quick-start-card" href="03-house.html"><strong>房屋翻修</strong><span>查看自住房翻修与设施建设步骤。</span></a>\n'
-                '<a class="quick-start-card" href="04-intro.html"><strong>序章</strong><span>从开局流程和可选任务开始。</span></a>\n'
-                '<a class="quick-start-card" href="05-mc.html"><strong>主角</strong><span>查看主角相关任务的推进条件。</span></a>\n'
-                '</div>\n\n'
-                '#### 我想找什么\n\n'
-                '[基础机制](02-tips.md) · [开局任务](04-intro.md) · [房屋建设](03-house.md) · [地点与建设](#places) · [人物攻略](#characters)\n\n')
-    content += '#### 按主题浏览\n\n'
-    reviewed_files = {file_name for unused, file_name in chapters}
-    for category in ['入门与玩法', '地区与建设', '人物']:
-        category_chapters = []
-        for chapter in manifest()['chapters']:
-            if chapter['category'] != category or chapter['file'] not in reviewed_files:
-                continue
-            path = ROOT / 'docs' / chapter['file']
-            title = re.search(r'^# (.+)$', path.read_text(encoding='utf-8'), re.M).group(1)
-            category_chapters.append((title, chapter['file']))
-        if not category_chapters:
-            continue
-        anchor = {'入门与玩法': 'gameplay', '地区与建设': 'places', '人物': 'characters'}[category]
-        content += '##### %s {#%s}\n\n<div class="homepage-chapter-grid" markdown>\n\n' % (category, anchor)
-        content += '\n\n'.join('- [%s](%s)' % chapter for chapter in category_chapters)
-        content += '\n\n</div>\n\n'
+    content = ('<div class="guide-homepage">\n'
+               '<p class="guide-homepage-meta">当前版本 %s · 已人工审核 %d 章</p>\n'
+               '<a class="guide-feature-card" href="04-intro.html"><span class="guide-card-label">推荐起点</span><span class="guide-card-title">从序章开始阅读</span><span class="guide-card-copy">从开局流程和可选任务进入攻略。</span><span class="guide-card-action">开始阅读 →</span></a>\n'
+               '<div class="guide-category-grid">\n'
+               '<a class="guide-category-card" href="02-tips.html"><span class="guide-card-label">01</span><span class="guide-card-title">入门与玩法</span><span class="guide-card-copy">检定、饱食、休息与常用机制。</span><span class="guide-card-action">查看攻略 →</span></a>\n'
+               '<a class="guide-category-card" href="07-church.html"><span class="guide-card-label">02</span><span class="guide-card-title">地区与建设</span><span class="guide-card-copy">地点任务、房屋翻修与设施建设。</span><span class="guide-card-action">查看攻略 →</span></a>\n'
+               '<a class="guide-category-card" href="06-mira.html"><span class="guide-card-label">03</span><span class="guide-card-title">人物</span><span class="guide-card-copy">按人物整理的任务推进条件与步骤。</span><span class="guide-card-action">查看攻略 →</span></a>\n'
+               '</div>\n'
+               '<p class="guide-homepage-footer"><a href="catalog.html">浏览全部章节与进度 →</a></p>\n'
+               '</div>\n') % (manifest()['version'], len(chapters))
     sync_marked_section(ROOT / 'docs' / 'index.md', r'(<!-- homepage-reviewed:start -->\n)(.*?)(<!-- homepage-reviewed:end -->)',
                         content, '首页')
     print('首页已同步 %d 个已审核章节。' % len(chapters))

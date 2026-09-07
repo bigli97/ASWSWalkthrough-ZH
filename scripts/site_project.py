@@ -487,8 +487,13 @@ def sync_readme():
 
 def sync_homepage():
     chapters = reviewed_chapters()
+    total_chapters = len(manifest()['chapters'])
+    if len(chapters) == total_chapters:
+        review_status = '已人工审核全部章节'
+    else:
+        review_status = '已人工审核 %d 章' % len(chapters)
     content = ('<div class="guide-homepage">\n'
-               '<p class="guide-homepage-meta">当前版本 %s · 已人工审核 %d 章</p>\n'
+               '<p class="guide-homepage-meta">当前版本 %s · %s</p>\n'
                '<a class="guide-feature-card" href="04-intro.html"><span class="guide-card-label">推荐起点</span><span class="guide-card-title">从序章开始阅读</span><span class="guide-card-copy">从开局流程和可选任务进入攻略。</span><span class="guide-card-action">开始阅读 →</span></a>\n'
                '<div class="guide-category-grid">\n'
                '<a class="guide-category-card" href="02-tips.html"><span class="guide-card-label">01</span><span class="guide-card-title">入门与玩法</span><span class="guide-card-copy">检定、饱食、休息与常用机制。</span><span class="guide-card-action">查看攻略 →</span></a>\n'
@@ -496,7 +501,7 @@ def sync_homepage():
                '<a class="guide-category-card" href="06-mira.html"><span class="guide-card-label">03</span><span class="guide-card-title">人物</span><span class="guide-card-copy">按人物整理的任务推进条件与步骤。</span><span class="guide-card-action">查看攻略 →</span></a>\n'
                '</div>\n'
                '<p class="guide-homepage-footer"><a href="catalog.html">浏览全部章节与进度 →</a></p>\n'
-               '</div>\n') % (manifest()['version'], len(chapters))
+               '</div>\n') % (manifest()['version'], review_status)
     sync_marked_section(ROOT / 'docs' / 'index.md', r'(<!-- homepage-reviewed:start -->\n)(.*?)(<!-- homepage-reviewed:end -->)',
                         content, '首页')
     print('首页已同步 %d 个已审核章节。' % len(chapters))

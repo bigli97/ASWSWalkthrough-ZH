@@ -6,7 +6,7 @@
 
 <!-- homepage-reviewed:start -->
 <div class="guide-homepage">
-<p class="guide-homepage-meta">当前版本 0.6.2.0 · 已人工审核 53 章</p>
+<p class="guide-homepage-meta">当前版本 0.6.2.0 · 已人工审核全部章节</p>
 <a class="guide-feature-card" href="04-intro.html"><span class="guide-card-label">推荐起点</span><span class="guide-card-title">从序章开始阅读</span><span class="guide-card-copy">从开局流程和可选任务进入攻略。</span><span class="guide-card-action">开始阅读 →</span></a>
 <div class="guide-category-grid">
 <a class="guide-category-card" href="02-tips.html"><span class="guide-card-label">01</span><span class="guide-card-title">入门与玩法</span><span class="guide-card-copy">检定、饱食、休息与常用机制。</span><span class="guide-card-action">查看攻略 →</span></a>

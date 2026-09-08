@@ -1,4 +1,4 @@
-site_name: A Struggle With Sin 中文攻略
+site_name: 原罪之战中文攻略
 site_description: 按任务条件与行动步骤查阅的本地中文攻略
 site_author: 原攻略 Chyos · 原站 Aloof Tooth
 site_url: https://bigli97.github.io/ASWSWalkthrough-ZH/
@@ -47,6 +47,8 @@ hooks:
   - scripts/hooks.py
 extra_css:
   - assets/site.css
+extra_javascript:
+  - assets/search-exact.js
 validation:
   links:
     not_found: warn

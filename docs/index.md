@@ -1,7 +1,7 @@
 <div class="guide-homepage-intro">
   <p class="guide-homepage-kicker">A STRUGGLE WITH SIN</p>
-  <h1>原罪之战中文攻略</h1>
-  <p>希望大家玩的开心</p>
+  <h1>原罪之战攻略</h1>
+  <p>我还补充了一些额外的攻略内容，希望大家玩的开心</p>
 </div>
 
 <!-- homepage-reviewed:start -->
@@ -11,7 +11,7 @@
 <div class="guide-category-grid">
 <a class="guide-category-card" href="02-tips.html"><span class="guide-card-label">01</span><span class="guide-card-title">入门与玩法</span><span class="guide-card-copy">检定、饱食、休息与常用机制。</span><span class="guide-card-action">查看攻略 →</span></a>
 <a class="guide-category-card" href="07-church.html"><span class="guide-card-label">02</span><span class="guide-card-title">地区与建设</span><span class="guide-card-copy">地点任务、房屋翻修与设施建设。</span><span class="guide-card-action">查看攻略 →</span></a>
-<a class="guide-category-card" href="06-mira.html"><span class="guide-card-label">03</span><span class="guide-card-title">人物</span><span class="guide-card-copy">按人物整理的任务推进条件与步骤。</span><span class="guide-card-action">查看攻略 →</span></a>
+<a class="guide-category-card" href="maintainer-notes.html"><span class="guide-card-label">03</span><span class="guide-card-title">维护者补充</span><span class="guide-card-copy">针对原攻略步骤的定位、条件与版本差异补充。</span><span class="guide-card-action">查看补充 →</span></a>
 </div>
 <p class="guide-homepage-footer"><a href="catalog.html">浏览全部章节与进度 →</a></p>
 </div>

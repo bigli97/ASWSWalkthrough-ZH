@@ -6,7 +6,7 @@
     下文关于绿色高亮、右侧菜单和 Cookie 的说明属于原站。本站保留这些原文信息；本站不提供隐藏章节功能。
 
 <!-- source:0001 -->
-这是 Chyos 制作的游戏《A Struggle With Sin》的攻略（[SubscribeStar](https://subscribestar.adult/chyos)、[Patreon](https://www.patreon.com/Chyos)）。
+这是 Chyos 制作的游戏《原罪之战》的攻略（[SubscribeStar](https://subscribestar.adult/chyos)、[Patreon](https://www.patreon.com/Chyos)）。
 
 <!-- source:0002 -->
 本攻略使用 A 和 C，分别作为好感度（Affection）与堕落度（Corruption）的缩写。

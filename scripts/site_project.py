@@ -27,16 +27,16 @@ TITLES = {'wt-info': '基本信息', 'wt-tips': '技巧与窍门', 'wt-intro': '
           'wt-tia': '蒂娅（砍木头的）', 'wt-arianna': '阿丽安娜（木匠女儿）', 'wt-emily': '艾米丽（你家上面）',
           'wt-lyvia': '莉维娅（民兵队长）', 'wt-melissa': '梅丽莎（铁匠女儿）', 'wt-imawyn': '伊玛温（强盗首领）', 'wt-maui': '毛伊（兽人）',
           'wt-church': '教堂', 'wt-monastery': '修道院', 'wt-katherin': '凯瑟琳（蒂娅老母）',
-          'wt-kate': '凯特（酒馆服务员）', 'wt-claire': '克莱尔（凯特老母）', 'wt-frisha': '弗莉莎（裁缝）',
-          'wt-bianca': '比安卡（偷窃）', 'wt-gavina': '加维娜', 'wt-ugotha': '乌戈莎',
-          'wt-snikka': '斯尼卡', 'wt-natasha': '娜塔莎', 'wt-ophilia': '奥菲莉娅',
+          'wt-kate': '凯特（酒馆服务员）', 'wt-claire': '克莱尔（凯特老母）', 'wt-frisha': '芙莉莎（裁缝）',
+          'wt-bianca': '比安卡（小偷）', 'wt-gavina': '加维娜（小偷老母）', 'wt-ugotha': '乌戈莎',
+          'wt-snikka': '斯尼卡', 'wt-natasha': '娜塔莎', 'wt-ophilia': '奥菲莉娅(卖驴的)',
           'wt-anya': '安雅', 'wt-penny': '佩妮（农场）', 'wt-lilly': '莉莉（庄园女仆）',
           'wt-elisabeth': '伊丽莎白（庄园老婆）', 'wt-gwen': '格温（女巫）', 'wt-sabrina': '萨布丽娜（格温徒弟）',
           'wt-athia': '阿西娅', 'wt-bridget': '布丽姬特', 'wt-agatha': '阿加莎',
           'wt-heather': '希瑟', 'wt-rumah': '鲁玛村', 'wt-raaisha': '拉伊莎（鲁玛猎人）',
           'wt-hiba': '希芭（鲁玛村民）', 'wt-nyra': '妮拉（酋长老婆）', 'wt-ayita': '阿伊塔（鲁玛跳舞的）', 'wt-umah': '乌玛（酋长女儿）',
           'wt-darkholt': '重建暗林', 'wt-mansion': '市长宅邸', 'wt-julia': '朱莉娅（市长女仆）',
-          'wt-liandra': '莉安德拉（男爵夫人）', 'wt-helena': '海伦娜', 'wt-yasmine': '雅斯敏'}
+          'wt-liandra': '莉安德拉（男爵夫人）', 'wt-helena': '海伦娜', 'wt-yasmine': '雅斯敏（市长老婆）'}
 PLACES = {'wt-house', 'wt-church', 'wt-monastery', 'wt-rumah', 'wt-darkholt', 'wt-mansion'}
 
 
@@ -436,7 +436,7 @@ def _stage():
 
 
 def navigation():
-    nav = [{'攻略首页': 'index.md'}, {'全部章节与进度': 'catalog.md'}]
+    nav = [{'攻略首页': 'index.md'}, {'维护者补充': 'maintainer-notes.md'}, {'全部章节与进度': 'catalog.md'}]
     for category in ['入门与玩法', '地区与建设', '人物']:
         items = []
         for c in manifest()['chapters']:
@@ -498,7 +498,7 @@ def sync_homepage():
                '<div class="guide-category-grid">\n'
                '<a class="guide-category-card" href="02-tips.html"><span class="guide-card-label">01</span><span class="guide-card-title">入门与玩法</span><span class="guide-card-copy">检定、饱食、休息与常用机制。</span><span class="guide-card-action">查看攻略 →</span></a>\n'
                '<a class="guide-category-card" href="07-church.html"><span class="guide-card-label">02</span><span class="guide-card-title">地区与建设</span><span class="guide-card-copy">地点任务、房屋翻修与设施建设。</span><span class="guide-card-action">查看攻略 →</span></a>\n'
-               '<a class="guide-category-card" href="06-mira.html"><span class="guide-card-label">03</span><span class="guide-card-title">人物</span><span class="guide-card-copy">按人物整理的任务推进条件与步骤。</span><span class="guide-card-action">查看攻略 →</span></a>\n'
+               '<a class="guide-category-card" href="maintainer-notes.html"><span class="guide-card-label">03</span><span class="guide-card-title">维护者补充</span><span class="guide-card-copy">针对原攻略步骤的定位、条件与版本差异补充。</span><span class="guide-card-action">查看补充 →</span></a>\n'
                '</div>\n'
                '<p class="guide-homepage-footer"><a href="catalog.html">浏览全部章节与进度 →</a></p>\n'
                '</div>\n') % (manifest()['version'], review_status)
@@ -557,52 +557,16 @@ def run(*args):
     subprocess.run(args, cwd=ROOT, check=True)
 
 
-def pdf():
-    if not shutil.which('pandoc'):
-        raise ValueError('请先安装 Pandoc，再运行 make pdf。')
-    stage()
-    documents, combined = [], []
-    for c in manifest()['chapters']:
-        path = ROOT / 'docs' / c['file']
-        if path.exists():
-            documents.append(c)
-    files = {c['file']: c['id'] for c in documents}
-    for c in documents:
-        text = (ROOT / 'docs' / c['file']).read_text()
-        text = re.sub(r'<!-- source:\d+ -->\s*', '', text)
-        text = re.sub(r'^# (.+)$', r'# \1 {#' + c['id'] + '}', text, count=1, flags=re.M)
-        # Pandoc 不支持 MkDocs 提示框语法，保留其完整文字为引用。
-        text = re.sub(r'^!!! \w+ "([^"]+)"\n((?:    .*\n?)+)', lambda m: '> **' + m[1] + '**\n> ' + m[2].replace('    ', '').replace('\n', '\n> ') + '\n', text, flags=re.M)
-        def link(m):
-            label, target = m[1], m[2]
-            if target in files:
-                return '[' + label + '](#' + files[target] + ')'
-            return label + '（相关章节未收入本 PDF）'
-        text = re.sub(r'(?<!!)\[([^\]]+)\]\(([^)]+\.md)\)', link, text)
-        combined.append(text)
-    output = ROOT / 'dist' / 'pdf'
-    output.mkdir(parents=True, exist_ok=True)
-    shutil.copytree(BUILD / 'assets' / 'images', output / 'assets' / 'images', dirs_exist_ok=True)
-    merged = output / 'walkthrough-zh.md'
-    write(merged, '\n\n'.join(combined))
-    typ = output / 'walkthrough-zh.typ'
-    run('pandoc', str(merged), '--from=markdown', '--to=typst', '--standalone', '--toc', '--toc-depth=2', '--resource-path=' + str(BUILD), '-V', 'mainfont=PingFang SC', '-V', 'lang=zh', '-V', 'title=A Struggle With Sin 中文攻略', '-o', str(typ))
-    import typst
-    # 资源相对根使用暂存目录，与网站引用一致。
-    typst.compile(str(typ), output=str(output / 'walkthrough-zh.pdf'), root=str(ROOT), font_paths=['/System/Library/Fonts'],)
-    print('已按入口顺序导出 %d 章：dist/pdf/walkthrough-zh.pdf' % len(documents))
-
-
 def main():
     parser = argparse.ArgumentParser(description='中文攻略工程命令')
-    parser.add_argument('command', choices=['extract', 'pending', 'assemble', 'sync-readme', 'sync-homepage', 'preview', 'build', 'check', 'pdf'])
+    parser.add_argument('command', choices=['extract', 'pending', 'assemble', 'sync-readme', 'sync-homepage', 'preview', 'build', 'check'])
     args = parser.parse_args()
     try:
         if args.command == 'sync-readme':
             sync_readme()
         elif args.command == 'sync-homepage':
             sync_homepage()
-        elif args.command in ['extract', 'pending', 'assemble', 'check', 'pdf']:
+        elif args.command in ['extract', 'pending', 'assemble', 'check']:
             globals()[args.command]()
         else:
             stage()

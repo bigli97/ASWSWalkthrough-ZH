@@ -4,13 +4,13 @@
 
 | 原文 | 中文 | 说明 |
 | --- | --- | --- |
-| A Struggle With Sin | A Struggle With Sin | 游戏标题暂保留英文 |
+| A Struggle With Sin | 原罪之战 | 游戏标题 |
 | MC / Main Character | 主角 | |
 | Affection / A | 好感度 / A | 保留攻略数值缩写 |
 | Corruption / C | 堕落度 / C | C 同时可能是制作快捷键，按上下文区分 |
 | Lust | 欲望值 | |
 | Mira | 米拉 | 人名 |
-| Frisha | 弗莉莎 | 人名 |
+| Frisha | 芙莉莎 | 人名 |
 | Penny | 佩妮 | 人名 |
 | Aidalin | 艾达琳 | 人名 |
 | Arianna | 阿丽安娜 | 人名 |
@@ -62,7 +62,7 @@
 | Fiona | 菲奥娜 | 人名 |
 | Francis | 弗朗西斯 | 人名 |
 | Gabriel | 加布里埃尔 | 人名 |
-| Giron | 吉隆 | 人名 |
+| Giron | 吉伦 | 人名 |
 | Gritz | 格里茨 | 人名 |
 | Gromthul | 格罗姆苏尔 | 人名 |
 | Harvald | 哈瓦尔德 | 人名 |
@@ -114,7 +114,7 @@
 | Drunken Fox | 醉狐酒馆 | 地点 |
 | Coldstone | 冷石 | 地名 |
 | Darkholt | 暗林 | 地名 |
-| Darkwood | 黑森林 | 地名 |
+| Darkwood | 黑暗森林 | 地名 |
 | Elderwood | 长生木 | 地名 |
 | Madrag Kaz | 马德拉格·卡兹 | 地名 |
 | Silverroot | 银根草 | 地名 |
@@ -145,7 +145,7 @@
 | Fire stones | 火石 | 道具 |
 | Tutorial gem | 教程宝石 | 道具 |
 | control your lust | 控制欲望 | 任务名 |
-| TP | TP | 原文未展开含义，保留 |
+| TP | 天赋点 | |
 | silver | 银币 | 货币 |
 | lockpicking | 开锁 | 技能 |
 | forging | 锻造 | 技能 |

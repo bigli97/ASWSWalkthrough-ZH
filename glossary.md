@@ -115,7 +115,7 @@
 | Coldstone | 冷石 | 地名 |
 | Darkholt | 暗林 | 地名 |
 | Darkwood | 黑暗森林 | 地名 |
-| Elderwood | 长生木 | 地名 |
+| Elderwood | 长老木 | 地名 |
 | Madrag Kaz | 马德拉格·卡兹 | 地名 |
 | Silverroot | 银根草 | 地名 |
 | Winterhowl | 冬嚎 | 专有名词 |

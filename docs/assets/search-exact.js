@@ -25,16 +25,6 @@
       .replace(/'/g, '&#39;');
   }
 
-  function countMatches(text, query) {
-    var count = 0;
-    var start = 0;
-    while (text.indexOf(query, start) !== -1) {
-      count += 1;
-      start = text.indexOf(query, start) + query.length;
-    }
-    return count;
-  }
-
   function makeSnippet(text, query) {
     var position = normalize(text).indexOf(query);
     var start = Math.max(0, position - 52);
@@ -47,7 +37,7 @@
 
   function loadIndex() {
     if (!indexPromise) {
-      indexPromise = fetch(new URL('../search/search_index.json', script.src).href)
+      indexPromise = fetch(new URL('../search/search_exact_index.json', script.src).href)
         .then(function (response) {
           if (!response.ok) {
             throw new Error('无法读取站内搜索索引');
@@ -55,11 +45,12 @@
           return response.json();
         })
         .then(function (data) {
-          return data.docs.map(function (document) {
+          return data.entries.map(function (entry) {
             return {
-              location: document.location,
-              title: plainText(document.title || ''),
-              text: plainText(document.text || '')
+              location: entry.location,
+              pageTitle: plainText(entry.page_title || ''),
+              sectionTitle: plainText(entry.section_title || ''),
+              text: plainText(entry.text || '')
             };
           });
         });
@@ -76,26 +67,29 @@
       return;
     }
 
-    matches = documents.map(function (document) {
-      var title = normalize(document.title);
+    matches = documents.map(function (document, order) {
+      var pageTitle = normalize(document.pageTitle);
+      var sectionTitle = normalize(document.sectionTitle);
       var text = normalize(document.text);
-      var titlePosition = title.indexOf(query);
       var textPosition = text.indexOf(query);
-      if (titlePosition === -1 && textPosition === -1) {
+      if (textPosition === -1) {
         return null;
       }
       return {
         document: document,
-        titlePosition: titlePosition,
+        pageTitlePosition: pageTitle.indexOf(query),
+        sectionTitlePosition: sectionTitle.indexOf(query),
         textPosition: textPosition,
-        count: countMatches(title, query) + countMatches(text, query)
+        order: order
       };
     }).filter(function (match) {
       return match !== null;
     }).sort(function (left, right) {
-      var leftScore = (left.titlePosition === -1 ? 0 : 100000) + left.count * 100 - Math.max(left.titlePosition, 0);
-      var rightScore = (right.titlePosition === -1 ? 0 : 100000) + right.count * 100 - Math.max(right.titlePosition, 0);
-      return rightScore - leftScore;
+      var leftScore = (left.pageTitlePosition === -1 ? 0 : 100000) +
+        (left.sectionTitlePosition === -1 ? 0 : 10000);
+      var rightScore = (right.pageTitlePosition === -1 ? 0 : 100000) +
+        (right.sectionTitlePosition === -1 ? 0 : 10000);
+      return rightScore - leftScore || left.order - right.order;
     });
 
     if (!matches.length) {
@@ -103,27 +97,52 @@
       return;
     }
 
-    meta.textContent = matches.length + ' 个包含完整输入内容的结果';
+    meta.textContent = matches.length + ' 个可直接定位的结果';
     matches.slice(0, 30).forEach(function (match) {
       var item = document.createElement('li');
       var link = document.createElement('a');
       var article = document.createElement('article');
       var heading = document.createElement('h2');
       var excerpt = document.createElement('p');
-      var source = match.titlePosition !== -1 ? match.document.title : match.document.text;
+      var title = match.document.pageTitle;
+
+      if (match.document.sectionTitle &&
+          normalize(title).indexOf(normalize(match.document.sectionTitle)) === -1) {
+        title += ' · ' + match.document.sectionTitle;
+      }
 
       item.className = 'md-search-result__item';
       link.className = 'md-search-result__link';
-      link.href = new URL(match.document.location, new URL('../', script.src)).href;
+      link.href = new URL(match.document.location, new URL('../', script.src)).href
+        .replace('#', '?exact=' + encodeURIComponent(rawQuery) + '#');
       article.className = 'md-search-result__article md-typeset';
-      heading.textContent = match.document.title;
-      excerpt.innerHTML = makeSnippet(source, query);
+      heading.textContent = title;
+      excerpt.innerHTML = makeSnippet(match.document.text, query);
       article.appendChild(heading);
       article.appendChild(excerpt);
       link.appendChild(article);
       item.appendChild(link);
       list.appendChild(item);
     });
+  }
+
+  function highlightTarget() {
+    var query = location.search.match(/[?&]exact=([^&]*)/);
+    var target;
+    if (!query || !location.hash) {
+      return;
+    }
+    target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!target) {
+      return;
+    }
+    target.className += (target.className ? ' ' : '') + 'search-target--active';
+    window.setTimeout(function () {
+      target.className = target.className.replace(/(?:^|\s)search-target--active(?=\s|$)/, '');
+    }, 3000);
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, document.title, location.pathname + location.hash);
+    }
   }
 
   function initialize() {
@@ -168,8 +187,12 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initialize);
+    document.addEventListener('DOMContentLoaded', function () {
+      initialize();
+      highlightTarget();
+    });
   } else {
     initialize();
+    highlightTarget();
   }
 }());

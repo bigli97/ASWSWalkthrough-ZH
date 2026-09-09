@@ -340,6 +340,8 @@ CSS = '''
 [data-md-color-scheme="slate"] .quick-start-card { border-color: #4a4a4e; }
 [data-md-color-scheme="slate"] .quick-start-card:hover, [data-md-color-scheme="slate"] .chapter-overview { background: #29292c; }
 [data-md-color-scheme="slate"] .quick-start-card span { color: #d5d5d7; }
+.search-target--active { animation: search-target-highlight 2.8s ease-out; border-radius: .25rem; scroll-margin-top: 5rem; }
+@keyframes search-target-highlight { 0%, 45% { background: rgba(255, 213, 79, .42); box-shadow: 0 0 0 .35rem rgba(255, 213, 79, .18); } 100% { background: transparent; box-shadow: none; } }
 @media (max-width: 700px) { .md-typeset { font-size: .8rem; } .guide-homepage-intro { margin-top: 2.5rem; } .guide-homepage-intro h1 { font-size: 2.1rem; } .guide-category-grid { grid-template-columns: 1fr; } .guide-feature-card, .guide-category-card { min-height: auto; } .guide-category-card .guide-card-title { margin-top: 1.5rem; } }
 '''
 

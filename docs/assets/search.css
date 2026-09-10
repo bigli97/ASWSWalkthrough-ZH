@@ -1,0 +1,36 @@
+.guide-search-trigger { width: clamp(10rem, 22vw, 16rem); margin-left: .6rem; }
+.guide-search-trigger input { width: 100%; min-height: 1.8rem; padding: .3rem 2rem .3rem .7rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color); border: 1px solid currentColor; border-radius: .4rem; font: inherit; font-size: .7rem; }
+.guide-search-trigger input::placeholder { color: var(--md-default-fg-color--light); opacity: 1; }
+.guide-search { position: fixed; z-index: 4; right: .8rem; top: 2.8rem; width: min(26rem, calc(100vw - 1.6rem)); height: min(72vh, calc(100dvh - 3.6rem)); display: flex; flex-direction: column; gap: .4rem; padding: .8rem; background: color-mix(in srgb, var(--md-default-bg-color) 70%, transparent); color: var(--md-default-fg-color); border: 1px solid var(--md-default-fg-color--lighter); border-radius: .6rem; box-shadow: 0 .4rem 1.4rem #0003; font-size: .72rem; backdrop-filter: blur(.45rem); }
+.guide-search[hidden], .guide-search-toolbar[hidden], .guide-search [hidden], .guide-search-toolbar [hidden] { display: none !important; }
+.guide-search-summary { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.guide-search button, .guide-search-toolbar button, .guide-search-toolbar a { cursor: pointer; padding: .4rem .6rem; border: 1px solid var(--md-default-fg-color--lighter); border-radius: .3rem; }
+.guide-search-meta { margin: .25rem 0; color: var(--md-default-fg-color--light); font-size: .68rem; }
+.guide-search-results { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; list-style: none; margin: 0; padding: 0 .25rem 0 0; }
+.guide-search-results > li { padding: .6rem 0; border-bottom: 1px solid var(--md-default-fg-color--lighter); }
+.guide-search-link { display: block; padding: .65rem; color: inherit; border-radius: .3rem; line-height: 1.75; overflow-wrap: anywhere; }
+.guide-search-link:hover, .guide-search-link[aria-current] { background: var(--md-default-fg-color--lightest); box-shadow: inset .15rem 0 #d39b24; }
+.guide-search-link strong, .guide-search-link span { display: block; }
+.guide-search-link strong { margin-bottom: .3rem; }
+.guide-search details { margin: .15rem .65rem; font-size: .68rem; line-height: 1.7; }
+.guide-search summary { cursor: pointer; color: var(--md-default-fg-color--light); }
+.guide-search details p { margin: .4rem 0; }
+.guide-search mark, mark[data-guide-body-mark] { background: #ffe08a; color: #302000; padding: 0 .08em; border-radius: .12em; }
+.guide-search-target { scroll-margin-top: 6.5rem; outline: 2px solid #d39b24; outline-offset: .25rem; border-radius: .15rem; }
+.search-anchor { scroll-margin-top: 6.5rem; }
+.guide-search-toolbar { position: sticky; z-index: 3; top: 2.4rem; display: flex; align-items: center; justify-content: flex-end; gap: .4rem; padding: .35rem .8rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color); border-bottom: 1px solid var(--md-default-fg-color--lighter); font-size: .65rem; white-space: nowrap; }
+.guide-search :focus-visible, .guide-search-toolbar :focus-visible, .guide-search-trigger input:focus-visible { outline: 2px solid #d39b24; outline-offset: 2px; }
+/* 搜索临时浮在页面上方，不改变导航和正文布局。 */
+@media (max-width: 999px) {
+  .guide-search-trigger { flex: 1; min-width: 7rem; max-width: 15rem; }
+  .guide-search { right: 0; top: 2.4rem; width: 100%; height: calc(100dvh - 2.4rem); border: 0; border-radius: 0; box-shadow: none; }
+  .guide-search-open .md-main, .guide-search-open .md-footer { display: none; }
+  .guide-search-toolbar { flex-wrap: wrap; justify-content: center; }
+}
+
+
+.guide-search-link small { display: block; color: var(--md-default-fg-color--light); margin: .35rem 0; line-height: 1.65; }
+
+.guide-search-open .guide-search-toolbar > button,
+.guide-search-open .guide-search-toolbar[data-single="true"] { display: none; }
+.guide-search-link small { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }

@@ -27,13 +27,7 @@ theme:
     - navigation.top
     - navigation.footer
     - toc.integrate
-    - search.highlight
-    - search.suggest
-plugins:
-  - search:
-      lang: zh
-      separator: '[\s\u200b，。；：！？、（）()【】\[\]“”‘’<>/\-]+'
-      jieba_dict_user: .build/jieba-user.txt
+plugins: []
 markdown_extensions:
   - toc:
       permalink: false
@@ -47,6 +41,7 @@ hooks:
   - scripts/hooks.py
 extra_css:
   - assets/site.css
+  - assets/search.css
 extra_javascript:
   - assets/search-exact.js
 validation:
